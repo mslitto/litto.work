@@ -3,7 +3,7 @@
 
 body
   color $text-color
-  font-family Ubuntu, sans-serif
+  font-family Noto, sans-serif
   font-size 15px
   line-height 1.2
   max-width 1200px
@@ -58,9 +58,9 @@ a
   text-decoration none
 
   .arrow
-    fill #ffffff
+    fill $body-background-color
   .triangle
-    fill #000
+    fill $white
 
   &:hover
     color $link-hover-color
@@ -74,7 +74,7 @@ ul
   padding 0
 
 ul.nav
-  font-size 1.8em
+  font-size 1.6em
 
   li
     display block
@@ -95,7 +95,7 @@ ul.nav
         &::before
 
           content: "";
-          border-top: 3px solid $black;
+          border-top: 3px solid $white;
           display: block;
           margin: 0 0 0 50%;
           right: -4px;
@@ -104,7 +104,7 @@ ul.nav
       .border
         height 3px
         width 50%
-        background-color $black
+        background-color $white
         float right
 
   &.show
@@ -240,7 +240,7 @@ ul.nav
 .intro2
   line-height 1.5
   font-size 3em
-  font-family 'Ubuntu', sans-serif
+  font-family 'Noto', sans-serif
   font-style italic
   font-weight 200
   color $text-color-light
@@ -251,9 +251,9 @@ ul.nav
     display block
 
 .content
-  font-family 'Ubuntu', sans-serif
+  font-family 'Noto', sans-serif
   font-style regular
-  color $black
+  color $white
   line-height 1.5
 
   img
@@ -279,7 +279,7 @@ ul.nav
   font-size .8em
 
 .link
-  color #666
+  color $white
   text-decoration none
   font-size .9em
   line-height 1.9em
@@ -288,9 +288,9 @@ ul.nav
 /* About Page */
 
 .about-page
-  background-color rgba(242, 242, 242, 0.9)
-  font-weight 300
-  font-size 21px
+  background-color rgba(98, 255, 253, 0.9)
+  font-weight 200
+  font-size 20px
 
 
   opacity 0
@@ -321,7 +321,7 @@ ul.nav
 
   .about-page nav a
     text-decoration none
-    font-family 'Ubuntu', sans-serif
+    font-family 'Noto', sans-serif
     font-style italic
     display inline-block
     color black
@@ -339,7 +339,7 @@ body.about-visible
 
 .about-page-content
   margin  0 10%
-  font-family 'Ubuntu', sans-serif
+  font-family 'Noto', sans-serif
   font-style normal
   line-height 1.5
   font-size 16px
@@ -360,10 +360,10 @@ body.about-visible
     overflow hidden
 
   .link
-    color 010101
+    color $link-hover-color
     text-decoration none
-    font-size .6em
     line-height 1.9em
+    text-decoration underline
     display inline-block
     padding-right  10px
 
@@ -376,7 +376,7 @@ body.about-visible
   padding:10px
   z-index 1000000
   font-family sans-serif
-  color black
+  color $black
 
 
 @media (min-width: 600px)
@@ -394,7 +394,7 @@ body.about-visible
 
 @media (min-width: 700px)
   body
-    font-size 18px
+    font-size 22px
 
 
 @media (min-width: 800px)
@@ -408,13 +408,13 @@ body.about-visible
 
   .wrapper
     .left
-      padding 2.5% 2.5% 5% 5%
+      padding 5% 5% 5% 5%
       width 50%
       float left
     .right
-      padding 2.5% 5% 5% 2.5%
+      padding 5% 5% 5% 5%
       width 50%
       float right
 
   .about-page-content
-    font-size 28px
+    font-size 32px
