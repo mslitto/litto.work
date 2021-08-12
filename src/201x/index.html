@@ -1,39 +1,50 @@
 <extends src="page.html">
   <block name="menu">
     <ul class="nav">
-
       <li class="active"><a href="{{WEB_ROOT}}201x/">201≤</a></li>
       <li><a href="{{ WEB_ROOT }}">2021</a></li>
-      <li><a href="{{ WEB_ROOT }}2020/">2020</a></li>
-      <li><a href="{{ WEB_ROOT }}2019/">2019</a></li>
-      <li><a href="{{ WEB_ROOT }}2018/">2018</a></li>
+      <li><a href="{{ WEB_ROOT }}2020">2020</a></li>
+      <li><a href="{{WEB_ROOT}}2019/">2019</a></li>
+      <li><a href="{{WEB_ROOT}}2018/">2018</a></li>
+      <li><a href="{{WEB_ROOT}}201x/">201≤</a></li>
     </ul>
   </block>
 
   <block name="content">
     <div id="draggables">
 
-      <include src="drag.html" locals='{ 
-        "href": "https://illu.litto.work",
-        "src": "{{ DIR }}img/littography.gif"
-      }'></include>
-
-      <include src="drag.html" locals='{ 
-        "src": "{{ DIR }}img/litto_cyber.jpg"
-      }'></include>
-
-      <include src="drag.html" locals='{ 
-        "src": "{{ DIR }}img/litto_daredevil.jpg"
-      }'></include>
-
-      <include src="drag.html" locals='{ 
-        "href": "https://www.facebook.com/hometownberlin/videos/297655334350951/",
-        "src": "{{ DIR }}img/litto_laberlampe.gif"
+      <include src="drag.html" locals='{
+        "href": "{{ DIR }}facedead/",
+        "src": "{{ DIR }}img/litto_facedead.png"
       }'></include>
 
       <include src="drag.html" locals='{
-        "href": "https://issuu.com/ssiew/docs/diplom_2005_2013_2", 
-        "src": "{{ DIR }}img/litto_rushsyndrom.jpg"
+        "href": "{{ DIR }}facemeup/",
+        "src": "{{ DIR }}img/litto_facemeup.jpg"
+      }'></include>
+
+      <include src="drag.html" locals='{
+        "src": "{{ DIR }}img/litto_investment.jpg"
+      }'></include>
+
+      <include src="drag.html" locals='{
+        "href": "{{ DIR }}newreality/",
+        "src": "{{ DIR }}img/litto_newreality.jpg"
+      }'></include>
+
+      <include src="drag.html" locals='{
+        "href": "{{ DIR }}restrictedarea/",
+        "src": "{{ DIR }}img/litto_restrictedarea.jpg"
+      }'></include>
+
+      <include src="drag.html" locals='{
+        "href": "{{ DIR }}dervenus/",
+        "src": "{{ DIR }}img/litto_dervenus.jpg"
+      }'></include>
+
+      <include src="drag.html" locals='{
+        "href": "{{ DIR }}catfeed/",
+        "src": "{{ DIR }}img/litto_catfeed.png"
       }'></include>
 
     </div>
