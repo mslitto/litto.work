@@ -64,7 +64,7 @@ body.about-visible .about-page{opacity:1;left:0;top:0;/*transition left 300ms,to
 .about-page-content p{margin:0.5em 0;}
 .about-page-content iframe{width:350px;height:355px;margin:30px auto;display:block;overflow:hidden;}
 .about-page-content .link{color:#ff008d;text-decoration:none;line-height:1.9em;text-decoration:underline;display:inline-block;padding-right:10px;}
-.about-page-trigger{position:fixed;left:auto;right:0;top:auto;bottom:0;padding:10px;z-index:1000000;font-family:sans-serif;color:#010101;}
+.about-page-trigger:position fixed{left:auto;right:0;top:auto;bottom:0;padding:10px;z-index:1000000;font-family:sans-serif;color:#010101;}
 @media (min-width:600px){.main .section{font-size:2vw;} .left{margin-top:2.5%;} .right{margin-top:2.5%;}}
 @media (min-width:700px){body{font-size:22px;}}
 @media (min-width:800px){.projects{display:inline-block;} .projects .project{float:left;width:31%;margin:0 1%;} .wrapper .left{padding:5% 5% 5% 5%;width:50%;float:left;} .wrapper .right{padding:5% 5% 5% 5%;width:50%;float:right;} .about-page-content{font-size:32px;}}
