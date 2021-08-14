@@ -1,0 +1,52 @@
+<extends src="single.html">
+  <block name="menu">
+    <a class="backBtn" href="{{ WEB_ROOT }}">
+      <mixin name="pageLink"></mixin>
+    </a>
+  </block>
+
+  <block name="content">
+    <h2>Mirrored Spaces</h2>
+    <div class="left">
+
+      <div class="videoWrapper">
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7JR8qkHuYg0" frameborder="0"
+          allowfullscreen></iframe>
+      </div>
+      <img src="{{ DIR }}img/mirror_00.jpg">
+      <img src="{{ DIR }}img/mirror_01.jpg">
+      <img src="{{ DIR }}img/mirror_02.jpg">
+      <img src="{{ DIR }}img/cover.jpg">
+    </div>
+
+    <div class="right">
+      <h3>Some places are not accessible due to their nature. Still, they are an integral part of the city and should be preserved as cultural heritage.</h3>
+
+      <div class="content">
+        <p>
+      The aim is to digitize these abandoned places and make them accessible around the world with the Artificial Museum.
+
+      With a self-constructed "head-mounted display" (a mirror that is attached to the my head), I walk eyeless through these abandoned spaces, scan and transform them into virtual artifacts at their point of origin.
+
+      You can experience these artworks with your smartphone or AR glasses and position them in the real world.
+
+        </p>
+        <p class="ellipsis">...</p>
+      </div>
+
+      <div class='link'>
+
+        <p>
+          <a href="https://artificialmuseum.com/chemnitz/#z=17&lat=50.82539&lng=12.92207&s=list&d=leerraumsued&p=leerraumsued" target="_blank" rel="nofollow noopener noreferrer">
+            see AR @artificialmuseum.com
+          </a>
+        </p>
+        <p>
+          <a href="https://foundation.app/@Ms_Litto" target="_blank" rel="nofollow noopener noreferrer">
+            NFT @foundation
+          </a>
+        </p>
+      </div>
+    </div>
+  </block>
+</extends>
