@@ -56,7 +56,7 @@ img
 a
   color $link-color
   text-decoration none
-
+  
   .arrow
     fill $body-background-color
   .triangle
@@ -367,7 +367,7 @@ body.about-visible
     display inline-block
     padding-right  10px
 
-.about-page-trigger
+.about-page-trigger: 
   position fixed
   left auto
   right 0
