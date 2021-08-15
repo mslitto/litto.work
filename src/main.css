@@ -33,10 +33,10 @@ h1
 h2
   font-size 2.2em
   font-weight normal
-  /* letter-spacing .09em */
-  margin .5em $padding-side .2em
-  padding 0 0 .2em
-  border-bottom 1px solid #666
+  /* letter-spacing 0.09em */
+  margin 0.5em $padding-side 0.2em
+  padding 0 0 0.2em
+  border-bottom 1px solid $accent-color
 
 h3
   text-transform uppercase
@@ -56,7 +56,7 @@ img
 a
   color $link-color
   text-decoration none
-  
+
   .arrow
     fill $body-background-color
   .triangle
@@ -115,7 +115,7 @@ ul.nav
       transition all 500ms
   a
     font-style italic
-    padding 0 .1em 0 0
+    padding 0 0.1em 0 0
 
 
 .wrapper
@@ -124,15 +124,15 @@ ul.nav
 
   .left,
   .right
-    color #333
-    /* margin: .5em 0; */
+    color $wrapper-text-color
+    /* margin: 0.5em 0; */
     padding 0 $padding-side
 
     h3
       /*padding $padding-side 0 */
 
     img
-      margin .5em 0
+      margin 0.5em 0
       width 100%
 
   .full
@@ -147,7 +147,7 @@ ul.nav
     margin 2.5% 0
 
     &:first-child
-      margin .2em 0 5%
+      margin 0.2em 0 5%
 
 
 .header,
@@ -208,10 +208,10 @@ ul.nav
 
     .bg
       source, img
-        box-shadow 0px 0px 10px 0px rgba(0,0,0,.25)
+        box-shadow 0px 0px 10px 0px rgba(0,0,0,0.25)
     .bg2
       source, img
-        box-shadow 0px 0px 10px 0px rgba(0,0,0,.25)
+        box-shadow 0px 0px 10px 0px rgba(0,0,0,0.25)
 
 .videoWrapper
   height 0
@@ -219,7 +219,7 @@ ul.nav
   padding-bottom 56.25% /* 16:9 */
 
   iframe
-    background-color #f2f2f2
+    background-color $video-background-color
     height 100%
     left 0
     position absolute
@@ -270,18 +270,18 @@ ul.nav
   font-weight bold
 
 .ellipsis
-  color #666
+  color $accent-color
 
 .pagination
   margin-top 20px
   margin-bottom 0
   padding-left 30%
-  font-size .8em
+  font-size 0.8em
 
 .link
   color $white
   text-decoration none
-  font-size .9em
+  font-size 0.9em
   line-height 1.9em
 
 
@@ -291,7 +291,6 @@ ul.nav
   background-color rgba(98, 255, 253, 0.9)
   font-weight 200
   font-size 20px
-
 
   opacity 0
 
@@ -348,7 +347,6 @@ body.about-visible
   padding 0 0 150px
   text-align left
 
-
   p
     margin 0.5em 0
 
@@ -360,14 +358,20 @@ body.about-visible
     overflow hidden
 
   .link
-    color $link-hover-color
-    text-decoration none
     line-height 1.9em
-    text-decoration underline
     display inline-block
-    padding-right  10px
+    padding-right 10px
+    float left
 
-.about-page-trigger: 
+    a
+      color $black
+      text-decoration underline $link-hover-color
+
+      &:hover
+        color $link-hover-color
+        text-decoration underline $black
+
+.about-page-trigger:
   position fixed
   left auto
   right 0
@@ -378,8 +382,7 @@ body.about-visible
   font-family sans-serif
   color $black
 
-
-@media (min-width: 600px)
+@media(min-width: 600px)
   .main
     .section
       font-size 2vw
@@ -389,15 +392,11 @@ body.about-visible
   .right
     margin-top 2.5%
 
-
-
-
-@media (min-width: 700px)
+@media(min-width: 700px)
   body
     font-size 22px
 
-
-@media (min-width: 800px)
+@media(min-width: 800px)
   .projects
     display inline-block
 
