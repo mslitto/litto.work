@@ -365,11 +365,10 @@ body.about-visible
 
     a
       color $black
-      text-decoration underline $link-hover-color
+      text-decoration underline
 
       &:hover
         color $link-hover-color
-        text-decoration underline $black
 
 .about-page-trigger:
   position fixed
