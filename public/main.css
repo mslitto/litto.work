@@ -4,7 +4,7 @@ body.page{overflow:hidden;}
 body.about-visible{overflow:hidden;}
 h1,h2{margin:0 0 1em;font-style:italic;margin-bottom:10%;}
 h1{font-size:1.5em;}
-h2{font-size:2.2em;font-weight:normal;/* letter-spacing .09em */ margin:0.5em 2% 0.2em;padding:0 0 0.2em;border-bottom:1px solid #666;}
+h2{font-size:2.2em;font-weight:normal;/* letter-spacing 0.09em */ margin:0.5em 2% 0.2em;padding:0 0 0.2em;border-bottom:1px solid #666;}
 h3{text-transform:uppercase;line-height:1.5;font-size:1.2em;font-style:italic;font-weight:200;color:#fefefe;margin:0 0 1em;}
 img{max-height:100%;max-width:100%;}
 a{color:#fefefe;text-decoration:none;}
@@ -22,7 +22,7 @@ ul.nav li.active .border{height:3px;width:50%;background-color:#fefefe;float:rig
 ul.nav.show li{opacity:1;height:auto;width:auto;transition:all 500ms;}
 ul.nav a{font-style:italic;padding:0 0.1em 0 0;}
 .wrapper{display:inline-block;padding-bottom:3em;}
-.wrapper .left,.wrapper .right{color:#333;/* margin:.5em 0;*/ padding:0 2%;}
+.wrapper .left,.wrapper .right{color:#333;/* margin:0.5em 0;*/ padding:0 2%;}
 .wrapper .left img,.wrapper .right img{margin:0.5em 0;width:100%;}
 .wrapper .full img{padding:0 5%;width:auto;margin:5% auto;max-width:90%;display:block;}
 .wrapper .videoWrapper{margin:2.5% 0;}
@@ -63,7 +63,9 @@ body.about-visible .about-page{opacity:1;left:0;top:0;/*transition left 300ms,to
 .about-page-content{margin:0 10%;font-family:'Noto',sans-serif;font-style:normal;line-height:1.5;font-size:16px;font-weight:400;color:#010101;padding:0 0 150px;text-align:left;}
 .about-page-content p{margin:0.5em 0;}
 .about-page-content iframe{width:350px;height:355px;margin:30px auto;display:block;overflow:hidden;}
-.about-page-content .link{color:#ff008d;text-decoration:none;line-height:1.9em;text-decoration:underline;display:inline-block;padding-right:10px;}
+.about-page-content .link{line-height:1.9em;display:inline-block;padding-right:10px;float:left;}
+.about-page-content .link a{color:#010101;-webkit-text-decoration:underline #ff008d;text-decoration:underline #ff008d;}
+.about-page-content .link a:hover{color:#ff008d;-webkit-text-decoration:underline #010101;text-decoration:underline #010101;}
 .about-page-trigger:position fixed{left:auto;right:0;top:auto;bottom:0;padding:10px;z-index:1000000;font-family:sans-serif;color:#010101;}
 @media (min-width:600px){.main .section{font-size:2vw;} .left{margin-top:2.5%;} .right{margin-top:2.5%;}}
 @media (min-width:700px){body{font-size:22px;}}
