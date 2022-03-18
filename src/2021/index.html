@@ -1,0 +1,87 @@
+<extends src="page.html">
+  <block name="menu">
+    <ul class="nav">
+      <li class="active"><a href="{{WEB_ROOT}}2021/">2021</a></li>
+      <li><a href="{{ WEB_ROOT }}">2022</a></li>
+      <li><a href="{{ WEB_ROOT }}2021/">2021</a></li>
+      <li><a href="{{ WEB_ROOT }}2020/">2020</a></li>
+      <li><a href="{{ WEB_ROOT }}2019/">2019</a></li>
+      <li><a href="{{ WEB_ROOT }}2018/">2018</a></li>
+      <li><a href="{{ WEB_ROOT }}201x/">201≤</a></li>
+    </ul>
+  </block>
+
+  <block name="content">
+    <div id="draggables">
+      <include src="drag.html" locals='{
+        "classList": "bg bg2",
+        "target": true,
+        "href": "https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/4882520912089400573206802142476816289765772172068164122537169168204809895937",
+        "src": "{{ DIR }}type/iii/img/litto_type_III_iteration_1_small.jpg"
+      }'></include>
+
+      <include src="drag.html" locals='{
+        "classList": "bg bg2",
+        "target": true,
+        "href": "https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/4882520912089400573206802142476816289765772172068164122537169169304321523713",
+        "src": "{{ DIR }}type/iii/img/litto_type_III_iteration_2_small.jpg"
+      }'></include>
+
+      <include src="drag.html" locals='{
+        "classList": "bg bg2",
+        "target": true,
+        "href": "https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/4882520912089400573206802142476816289765772172068164122537169170403833151489",
+        "src": "{{ DIR }}type/iii/img/litto_type_III_iteration_3_small.jpg"
+      }'></include>
+
+
+      <include src="drag.html" locals='{
+        "src": "{{ DIR }}img/failureexploration.jpg"
+      }'></include>
+
+      <include src="drag.html" locals='{
+        "href": "{{ DIR }}hrlitto/",
+        "src": "{{ DIR }}hrlitto/img/skybox.png"
+      }'></include>
+
+      <include src="drag.html" locals='{
+        "href": "{{ DIR }}mirroredSpaces/",
+        "src": "{{ DIR }}img/headmounted.jpg"
+      }'></include>
+
+      <include src="drag.html" locals='{
+        "classList": "bg bg2",
+        "target": true,
+        "href": "https://foundation.app/@Ms_Litto",
+        "src": "{{ DIR }}img/mirror_00.jpg"
+      }'></include>
+
+      <include src="drag.html" locals='{
+        "classList": "bg bg2",
+        "target": true,
+        "href": "https://foundation.app/@Ms_Litto",
+        "src": "{{ DIR }}img/mirror_01.jpg"
+      }'></include>
+
+      <include src="drag.html" locals='{
+        "classList": "bg bg2",
+        "target": true,
+        "href": "https://foundation.app/@Ms_Litto",
+        "src": "{{ DIR }}img/mirror_02.jpg"
+      }'></include>
+
+      <include src="drag.html" locals='{
+        "href": "{{ DIR }}type/iii/",
+        "src": "{{ DIR }}type/iii/img/litto_type_III_iteration_7.jpg"
+      }'></include>
+
+      <include src="drag.html" locals='{
+        "classList": "bg bg2",
+        "target": true,
+        "href": "https://artificialmuseum.com",
+        "src": "{{ DIR }}img/artificialmuseum.png"
+      }'></include>
+
+    </div>
+  </block>
+</extends>
