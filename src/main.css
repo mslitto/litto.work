@@ -47,11 +47,24 @@ h3
   color $text-color-light
   margin 0 0 1em
 
+h4
+  line-height 1.1
+  font-size 1.1em
+  margin 0.5em 0 0.2em
 
 
 img
   max-height 100%
   max-width 100%
+
+.aboutImg
+  width 50%
+  float left
+  margin 0 1em 1em 0 
+
+.aboutHeader
+  clear both
+  font-size 1.4em
 
 a
   color $link-color
@@ -66,6 +79,8 @@ a
     color $link-hover-color
 
     .triangle
+      weight 70px
+      height auto
       fill $link-hover-color-svg
 
 ul
@@ -74,7 +89,7 @@ ul
   padding 0
 
 ul.nav
-  font-size 1.6em
+  font-size 1em 
 
   li
     display block
@@ -83,6 +98,7 @@ ul.nav
     width 0
     overflow hidden
     transition all 500ms
+    margin 0 0 0.2em
 
     &.active
       opacity 1
@@ -97,7 +113,7 @@ ul.nav
           content: "";
           border-top: 3px solid $white;
           display: block;
-          margin: 0 0 0 50%;
+          margin: 0 0 8px 50%;
           right: -4px;
           position: relative;
 
@@ -250,6 +266,14 @@ ul.nav
     padding 0
     display block
 
+.cv
+  line-height 1.1
+  font-size 0.8em
+  font-family 'Noto', sans-serif
+  font-style italic
+  font-weight 200
+  color $text-color-dark
+
 .content
   font-family 'Noto', sans-serif
   font-style regular
@@ -258,6 +282,9 @@ ul.nav
 
   img
     margin 1em 0
+
+.clearboth
+  clear both
 
 .left
   .content
@@ -288,7 +315,7 @@ ul.nav
 /* About Page */
 
 .about-page
-  background-color rgba(98, 255, 253, 0.9)
+  background-color rgba(255,0,132, 0.9)
   font-weight 200
   font-size 20px
 
@@ -324,7 +351,7 @@ ul.nav
     font-style italic
     display inline-block
     color black
-    padding 5px 10px
+    padding 5px 5px
 
 body.about-visible
   /* #draggables
@@ -340,11 +367,11 @@ body.about-visible
   margin  0 10%
   font-family 'Noto', sans-serif
   font-style normal
-  line-height 1.5
-  font-size 16px
+  line-height 1.1
+  font-size 14px
   font-weight 400
   color $black
-  padding 0 0 150px
+  padding 0 0 10px
   text-align left
 
   p
@@ -370,7 +397,7 @@ body.about-visible
       &:hover
         color $link-hover-color
 
-.about-page-trigger:
+.about-page-trigger
   position fixed
   left auto
   right 0
@@ -380,6 +407,10 @@ body.about-visible
   z-index 1000000
   font-family sans-serif
   color $black
+
+  img 
+    width 120px
+    height auto
 
 @media(min-width: 600px)
   .main
@@ -406,13 +437,20 @@ body.about-visible
 
   .wrapper
     .left
-      padding 5% 5% 5% 5%
-      width 50%
+      padding 0.5em 2% 0.2em
+      width 60%
       float left
     .right
-      padding 5% 5% 5% 5%
-      width 50%
+      padding 0.5em 2% 0.2em 2%
+      width 40%
       float right
 
   .about-page-content
-    font-size 32px
+    font-size 24px
+
+@media(min-width: 1000px)
+  .aboutImg
+    width 40%
+
+  .aboutHeader
+    clear none
