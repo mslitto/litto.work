@@ -4,7 +4,8 @@
 body
   color $text-color
   font-family Noto, sans-serif
-  font-size 15px
+  font-size 14px
+  font-weight 300
   line-height 1.2
   max-width 1200px
   margin 0 auto
@@ -274,6 +275,13 @@ ul.nav
   font-weight 200
   color $text-color-dark
 
+.credits
+  margin 0
+  padding 0
+  color #fefefe
+  font-style italic
+  font-size 0.8em
+
 .content
   font-family 'Noto', sans-serif
   font-style regular
@@ -364,18 +372,13 @@ body.about-visible
     /*transition left 300ms, top 300ms, opacity 500ms */
 
 .about-page-content
-  margin  0 10%
-  font-family 'Noto', sans-serif
-  font-style normal
-  line-height 1.1
-  font-size 14px
-  font-weight 400
+  margin  0 5%
   color $black
-  padding 0 0 10px
+  padding 0 0 200px
   text-align left
 
   p
-    margin 0.5em 0
+    margin 0.8em 0
 
   iframe
     width 350px
