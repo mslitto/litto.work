@@ -1,13 +1,7 @@
 <extends src="page.html">
   <block name="content">
     <div id="draggables">
-      
-      <include src="drag.html" locals='{
-        "classList": "bg",
-        "target": true,
-        "href": "{{ WEB_ROOT }}selected/newreality",
-        "src": "{{ WEB_ROOT }}selected/img/newreality.gif"
-      }'></include>   
+        
 
       <include src="drag.html" locals='{
         "classList": "bg bg2",
@@ -54,6 +48,13 @@
       <include src="drag.html" locals='{
         "classList": "bg bg2",
         "target": true,
+        "href": "{{ WEB_ROOT }}selected/gameoverreplay",
+        "src": "{{ WEB_ROOT }}selected/img/gameoverrelpay.png"
+      }'></include>
+
+      <include src="drag.html" locals='{
+        "classList": "bg bg2",
+        "target": true,
         "href": "https://artificialmuseum.com",
         "src": "{{ WEB_ROOT }}2021/img/artificialmuseum.png"
       }'></include>
@@ -68,23 +69,32 @@
       <include src="drag.html" locals='{
         "classList": "bg bg2",
         "target": true,
-        "href": "https://artificialmuseum.com/dresden/#z=17&lat=51.11368&lng=13.7525&d=gameover&p=gameover",
+        "href": "https://artificialmuseum.com/dresden/#z=17&lat=51.10643&lng=13.71974&d=gameover&p=gameover",
         "src": "{{ WEB_ROOT }}selected/img/bunker_lidar.jpg"
+      }'></include>
+
+      <include src="drag.html" locals='{
+        "classList": "bg bg2",
+        "target": true,
+        "href": "https://artificialmuseum.com/vienna/#z=18&lat=48.21014&lng=16.37962&s=list&d=liquidlitto&p=liquidlitto",
+        "src": "{{ WEB_ROOT }}selected/img/hrlitto2022.jpg"
+      }'></include>
+
+      <include src="drag.html" locals='{
+        "classList": "bg bg2",
+        "target": true,
+        "href": "https://artificialmuseum.com/vienna/#z=18&lat=48.18301&lng=16.39345&s=list&d=drueberfahrn&p=drueberfahrn",
+        "src": "{{ WEB_ROOT }}selected/img/hgm.jpg"
       }'></include>
 
       <include src="drag.html" locals='{
         "classList": "bg",
         "target": true,
-        "href": "https://artificialmuseum.com/dresden/#z=17&lat=51.11368&lng=13.7525&d=gameover&p=gameover",
-        "src": "{{ WEB_ROOT }}selected/img/facemirror.jpg"
+        "href": "https://artificialmuseum.com/vienna/#z=18&lat=48.23514&lng=16.32008&s=list&d=rlandestelle2&p=rlandestelle2",
+        "src": "{{ WEB_ROOT }}selected/img/landesstelle_truck.png"
       }'></include>
 
-     <include src="drag.html" locals='{
-        "classList": "bg",
-        "target": true,
-        "href": "https://artificialmuseum.com/vienna/#z=18&lat=48.18594&lng=16.38375&s=list&d=liquidlitto&p=liquidlitto",
-        "src": "{{ WEB_ROOT }}selected/img/hrlitto2022.jpg"
-      }'></include>
+
 
     </div>
   </block>
