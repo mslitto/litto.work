@@ -74,17 +74,17 @@ const onLoad = (par, tar) => {
     let top = 0
 
     // resize if too wide
-    const maxWidth = W.innerWidth * .7
+    const maxWidth = W.innerWidth * 0.7
     if (width > maxWidth) {
-      const widthPercent = (width / maxWidth) + .1
+      const widthPercent = width / maxWidth + 0.1
       width /= widthPercent
       height /= widthPercent
     }
 
     // resize if too high
-    const maxHeight = W.innerHeight * .7
+    const maxHeight = W.innerHeight * 0.7
     if (height > maxHeight) {
-      const heightPercent = (height / maxHeight) + .1
+      const heightPercent = height / maxHeight + 0.1
       height /= heightPercent
       width /= heightPercent
     }
@@ -132,23 +132,34 @@ forEach(drag, draggable => {
   }
 })
 
-const touchHandler = (event) => {
+const touchHandler = event => {
   const touch = event.changedTouches[0]
-  const simulatedEvent = D.createEvent("MouseEvent")
+  const simulatedEvent = D.createEvent('MouseEvent')
 
   const eventNames = {
-    touchstart: "mousedown",
-    touchmove: "mousemove",
-    touchend: "mouseup",
+    touchstart: 'mousedown',
+    touchmove: 'mousemove',
+    touchend: 'mouseup',
   }
 
   const evt = eventNames[event.type]
 
   simulatedEvent.initMouseEvent(
-    evt, true, true, W, 1,
-    touch.screenX, touch.screenY,
-    touch.clientX, touch.clientY,
-    false, false, false, false, 0, null
+    evt,
+    true,
+    true,
+    W,
+    1,
+    touch.screenX,
+    touch.screenY,
+    touch.clientX,
+    touch.clientY,
+    false,
+    false,
+    false,
+    false,
+    0,
+    null,
   )
 
   touch.target.dispatchEvent(simulatedEvent)
@@ -157,17 +168,13 @@ const touchHandler = (event) => {
   return false
 }
 
-const doNothing = (e) => {
+const doNothing = e => {
   e.preventDefault()
   return false
 }
 
-const isOutOfBounds = e => (
-  e.clientX >= W.innerWidth ||
-  e.clientX <= 0 ||
-  e.clientY >= W.innerHeight ||
-  e.clientY <= 0
-)
+const isOutOfBounds = e =>
+  e.clientX >= W.innerWidth || e.clientX <= 0 || e.clientY >= W.innerHeight || e.clientY <= 0
 
 const onDrag = evt => {
   dragged = evt.currentTarget.parentNode
@@ -248,13 +255,13 @@ W.onload = () => {
       on(img, 'dragstart', doNothing)
       on(img, 'mousedown', onDrag)
 
-      on(img, "touchstart", touchHandler, true)
-      on(img, "touchmove", touchHandler, true)
-      on(img, "touchend", touchHandler, true)
-      on(img, "touchcancel", touchHandler, true)
+      on(img, 'touchstart', touchHandler, true)
+      on(img, 'touchmove', touchHandler, true)
+      on(img, 'touchend', touchHandler, true)
+      on(img, 'touchcancel', touchHandler, true)
 
       const parentStyle = img.parentNode.style
-      if (parentStyle && parentStyle.left === '100%' || parentStyle.left === '-100%') {
+      if ((parentStyle && parentStyle.left === '100%') || parentStyle.left === '-100%') {
         img.dispatchEvent(new Event('load'))
       }
     }
@@ -268,7 +275,6 @@ W.onload = () => {
     }
   })
 }
-
 
 // Menu Toggler
 const menuContainer = $('.nav')[0]
@@ -289,16 +295,16 @@ const t = $('.about-page-trigger')[0]
 
 // if #about is in the url, show the about page
 if (W.location.hash === '#about') {
-  cl.toggle(D.body, "about-visible")
+  cl.toggle(D.body, 'about-visible')
 }
 
-on(t, "click", e => {
+on(t, 'click', e => {
   e.preventDefault()
   if (W.location.hash === '#about') {
     W.location.hash = ''
   } else {
     W.location.hash = '#about'
   }
-  cl.toggle(D.body, "about-visible")
+  cl.toggle(D.body, 'about-visible')
   return false
 })
