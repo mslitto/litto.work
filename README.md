@@ -20,6 +20,14 @@ now you have a local copy in ./litto.work:
 cd ./litto.work
 ```
 
+## publish page:
+
+1. npm run build
+2. git add .
+3. git commit -m "updated page"
+4. git push
+5. npm run publish
+
 #### git tasks:
 * #### git status
   shows changed files, run to check which files changed
@@ -39,14 +47,16 @@ cd ./litto.work
 #### npm run tasks:
 
 * #### npm run
-    shows all available npm commands
+  shows all available npm commands
 
 * #### npm run build
-    creates production build in public directory
+  creates production build in public directory
 
 * #### npm start
-    start the development server on localhost:3000
+  start the development server on localhost:3000
 
+* #### npm run publish
+  publish the page to litto.work
 
 #### workflow for changing content:
 
