@@ -12,7 +12,8 @@ export let width
 export let webp = true
 
 /** @type boolean */
-export let avif = true
+export let avif = false
+
 export let alt = ''
 
 /** @type string | null */
@@ -41,7 +42,7 @@ if (webp !== false) {
 
 // avif is disabled by default
 if (avif !== false) {
-  srcsets.push(src.replace(/\.(jpg|png|gif)$/, '.webp'))
+  srcsets.push(src.replace(/\.(jpg|png|gif)$/, '.avif'))
 }
 
 if (!pictureClass.includes('Picture')) {
