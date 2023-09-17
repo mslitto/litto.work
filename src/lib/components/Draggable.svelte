@@ -1,0 +1,308 @@
+<script type="ts">
+  import { onMount } from 'svelte'
+
+  import { DraggableLink, on, off } from '$lib/index'
+
+  import { zIndex, activeID, lastID } from '$lib/stores/index'
+
+  /** @type string */
+  export let src
+
+  /** @type string */
+  export let href = ''
+
+  /** @type string */
+  export let pictureClass = ''
+
+  /** @type boolean*/
+  export let webp = true
+
+  /** @type boolean */
+  const external = !href.startsWith('/') && !href.startsWith('#')
+
+  /** @type HTMLElement */
+  let draggableRef
+  /** @type HTMLImageElement */
+  let pictureRef
+
+  const offset = {
+    left: 0,
+    top: 0,
+  }
+
+  let style = {
+    left: '100%',
+    top: '100%',
+    transition: null,
+    opacity: '1',
+    zIndex: 0,
+  }
+
+  $: style
+
+  const ran = Math.random()
+  const pos = {
+    left: '100%',
+    top: '100%',
+  }
+
+  if (ran > 0.7) {
+    pos.left = `-${pos.left}`
+  } else if (ran < 0.3) {
+    pos.top = `-${pos.top}`
+  }
+
+  export const getPos = e => parseInt(e.replace('%', ''))
+
+  export const percentFromPixels = (dir, px) =>
+    (px / window[`inner${dir}`]) * 100
+
+  export const pixelsFromPercent = (dir, pc) =>
+    (pc * window[`inner${dir}`]) / 100
+
+  export const touchHandler = (event) => {
+    const touch = event.changedTouches[0]
+
+    let evt = 'mouseup'
+    if (event.type === 'touchstart') {
+      evt = 'mousedown'
+    } else if (event.type === 'touchmove') {
+      evt = 'mousemove'
+    } else if (event.type === 'touchend') {
+      evt = 'mouseup'
+    }
+
+    const simulatedEvent = new MouseEvent(evt, {
+      view: window,
+      bubbles: true,
+      cancelable: true,
+      screenX: touch.screenX,
+      screenY: touch.screenY,
+      clientX: touch.clientX,
+      clientY: touch.clientY,
+    })
+
+    touch.target.dispatchEvent(simulatedEvent)
+
+    return false
+  }
+
+  export const isOutOfBounds = (e) =>
+    e.clientX >= window.innerWidth ||
+    e.clientX <= 0 ||
+    e.clientY >= window.innerHeight ||
+    e.clientY <= 0
+
+  export const onDrag = (evt) => {
+    const { target } = evt
+    if ($activeID === src || target.tagName !== 'IMG') {
+      return
+    }
+
+    activeID.set(src)
+    lastID.set('')
+    zIndex.set($zIndex + 1)
+
+    offset.left = evt.clientX - pixelsFromPercent('Width', getPos(style.left))
+    offset.top = evt.clientY - pixelsFromPercent('Height', getPos(style.top))
+
+    style.transition = 'none'
+    style.zIndex = $zIndex
+    style.opacity = '0.8'
+
+    // document.addEventListener('mousemove', onMousemove)
+    on(document, 'mousemove', onMousemove)
+    on(document, 'mouseup', onDrop)
+    on(document, 'mouseout', onDropIfOutOfBounds)
+  }
+
+  export const onDrop = () => {
+    if ($activeID !== src) {
+      return
+    }
+
+    activeID.set('')
+    lastID.set(src)
+
+    style.transition = null
+    style.opacity = '1'
+
+    off(document, 'mousemove', onMousemove)
+    off(document, 'mouseup', onDrop)
+    off(document, 'mouseout', onDropIfOutOfBounds)
+  }
+
+  const onDropIfOutOfBounds = (e) => {
+    if (isOutOfBounds(e)) {
+      onDrop()
+    }
+  }
+
+  export const onMousemove = (evt) => {
+    if (draggableRef) {
+      const max = {
+        left: window.innerWidth - draggableRef.clientWidth,
+        top: window.innerHeight - draggableRef.clientHeight,
+      }
+
+      const newLeft = Math.floor(Math.max(0, Math.min(evt.clientX - offset.left, max.left)))
+
+      style.left = `${percentFromPixels('Width', newLeft)}%`
+
+      let newTop = evt.clientY - offset.top
+      if (newTop < 0) {
+        newTop = 0
+      } else if (newTop > max.top) {
+        newTop = max.top
+      }
+      style.top = `${percentFromPixels('Height', newTop)}%`
+    }
+  }
+
+  // resize and reposition after load of images
+  export const onLoad = () => {
+    const tar = pictureRef
+
+    const boundingClientRect = tar.getBoundingClientRect()
+    let width = boundingClientRect.width
+    let height = boundingClientRect.height
+
+    /** @type number */
+    let left = 0
+    /** @type number */
+    let top = 0
+
+    // resize if too wide
+    const maxWidth = window.innerWidth * 0.7
+    if (width > maxWidth) {
+      const widthPercent = width / maxWidth + 0.1
+      width /= widthPercent
+      height /= widthPercent
+    }
+
+    // resize if too high
+    const maxHeight = window.innerHeight * 0.7
+    if (height > maxHeight) {
+      const heightPercent = height / maxHeight + 0.1
+      height /= heightPercent
+      width /= heightPercent
+    }
+
+    const maxLeft = window.innerWidth - width
+    const maxTop = window.innerHeight - height
+    left = Math.random() * maxLeft
+    top = Math.random() * maxTop
+
+    style.left = `${Math.floor(percentFromPixels('Width', left))}%`
+    style.top = `${Math.floor(percentFromPixels('Height', top))}%`
+  }
+
+  onMount(() => {
+    const ran = Math.random()
+    const pos = {
+      left: '100%',
+      top: '100%',
+    }
+
+    if (ran > 0.7) {
+      pos.left = `-${pos.left}`
+    } else if (ran < 0.3) {
+      pos.top = `-${pos.top}`
+    }
+
+    style.left = pos.left
+    style.top = pos.top
+
+    // console.log({ style })
+    // return
+
+    if (pictureRef.complete) {
+      onLoad()
+    }
+  })
+</script>
+
+<div
+  role="presentation"
+  class="Draggable"
+  class:dragged={$activeID === src}
+  class:dropped={$lastID === src}
+  style:left={style.left}
+  style:top={style.top}
+  style:z-index={style.zIndex}
+  style:transition={style.transition}
+  style:opacity={style.opacity}
+  bind:this={draggableRef}
+  on:drop={onDrop}
+  on:dragstart|preventDefault
+  on:mousedown={onDrag}
+  on:touchstart|preventDefault|stopPropagation={touchHandler}
+  on:touchmove|preventDefault|stopPropagation={touchHandler}
+  on:touchend|preventDefault|stopPropagation={touchHandler}
+  on:touchcancel|preventDefault|stopPropagation={touchHandler}
+>
+  {#if href && $lastID === src}
+    <DraggableLink {href} {external} />
+  {/if}
+
+  {#if src}
+    <picture class={`Picture ${pictureClass}`}>
+      {#if webp}
+        <source srcset={src.replace(/\.(jpg|png|gif)$/, '.webp')} />
+      {/if}
+
+      <img bind:this={pictureRef} on:load={onLoad} {src} alt="" role="presentation" />
+    </picture>
+  {/if}
+</div>
+
+<style lang="scss">
+  .Draggable {
+    position: absolute;
+    z-index: 0;
+    transition: left 500ms, top 500ms;
+    left: 100vw;
+    top: 100vw;
+
+    .dragged {
+      transition: none;
+    }
+
+    .bg {
+      display: inline-block;
+      source,
+      img {
+        max-width: 35vw;
+        max-height: 40vh;
+      }
+    }
+
+    .bg2 {
+      display: inline-block;
+
+      source,
+      img {
+        max-width: 20vw;
+        max-height: 20vh;
+      }
+    }
+
+    &.dropped {
+      a {
+        .bg {
+          source,
+          img {
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+          }
+        }
+      }
+
+      .bg2 {
+        source,
+        img {
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+        }
+      }
+    }
+  }
+</style>

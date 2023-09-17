@@ -1,0 +1,43 @@
+<script>
+import { Link, Picture, YoutubeWrapper } from '$lib'
+</script>
+
+<h2>Das Vorspiel</h2>
+
+<div class="left">
+  <YoutubeWrapper id="YTYhBzs00TQ" width="560" height="315" title="Vorspiel Teaser" />
+
+  <Picture src="litto_vorspiel_life.jpg" height="788" width="1400" />
+  <Picture src="litto_vorspiel_object.jpg" height="1050" width="1400" />
+  <Picture src="litto_vorspiel_preview_01.jpg" height="675" width="1200" />
+  <Picture src="litto_vorspiel_preview_02.jpg" height="675" width="1200" />
+  <Picture src="litto_vorspiel_preview_03.jpg" height="675" width="1200" />
+</div>
+
+<div class="right">
+  <h3>PERFORM: DIGITAL IMAGE AND SOUND / ANALOGUE OBJECT</h3>
+
+  <div class="content">
+    <p>
+      <span class="bold uppercase">“Das Vorspiel”</span>
+      is an interactive audio- visual installation that can be perceived passive or actively via an
+      interface. The audience can choose to interfere with the piece and trigger the images and the
+      sound by teasing and exploring - or just lean back and enjoy the abstract voyeuristic gaze and
+      shifting soundscapes produced by the players. The object reacts to the movements and state of
+      pleasure of it’s visitors.
+    </p>
+    <p class="ellipsis">...</p>
+  </div>
+
+  <div class="link">
+    <p>
+      <Link href="https://setzkastenwien.at/">Music: Noa</Link>
+    </p>
+
+    <p>
+      <Link href="https://schwelle.at/" nofollow={true} noreferrer={true}>
+        Performance @ Schwelle Wien
+      </Link>
+    </p>
+  </div>
+</div>

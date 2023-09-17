@@ -1,0 +1,45 @@
+<script>
+  import { Link, Picture, YoutubeWrapper } from '$lib'
+</script>
+
+<h2>Cat Feed</h2>
+
+<div class="left">
+  <Picture src="litto_catfeed_realities.jpg" webp={false} height="1200" width="1200" />
+  <Picture src="litto_catfeed_expo_pic1.jpg" height="675" width="1200" />
+  <Picture src="litto_catfeed_expo_pic2.jpg" height="675" width="1200" />
+
+  <p class="credits">photo: Artivive</p>
+  <p></p>
+
+  <YoutubeWrapper
+    id="_1uJjT4bRKI?start=41"
+    title="Cat Feed Youtube Teaser"
+    width="560"
+    height="315"
+  />
+</div>
+
+<div class="right">
+  <h3>Feed the Cat, please.</h3>
+
+  <div class="content">
+    <p>
+      <span class="bold uppercase">Cat Feed</span>
+      is a closed circuit of feeding my virtual cat. An error in the system causes different realities...
+      feed the cat by finding the right moment in time!
+    </p>
+    <p class="ellipsis">…</p>
+  </div>
+
+  <div class="link">
+    <!-- <p>
+      <Link href="https://artivive.com/">AR App: Artivive</Link>
+    </p> -->
+    <p>
+      <Link href="http://www.burggasse98.com/2018/09/09/exist-design-days-2018/"
+        >@ Burggasse 98</Link
+      >
+    </p>
+  </div>
+</div>

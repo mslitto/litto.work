@@ -1,0 +1,41 @@
+<script>
+import { Link, Picture } from '$lib'
+</script>
+
+<h2>Kostprobe?</h2>
+
+<div class="left">
+  <Picture src="litto_kostprobe_visitor1.jpg" height="788" width="1400" />
+  <Picture src="litto_kostprobe_visitor2.jpg" height="788" width="1400" />
+  <Picture src="litto_kostprobe_inside_real.jpg" height="1000" width="750" />
+  <Picture src="litto_kostprobe_inside_surreal.jpg" height="667" width="1000" />
+</div>
+
+<div class="right">
+  <h3>
+    You collect a virtual drink travelling a digestive tract? It might taste excitingly different
+    in the real world.
+  </h3>
+
+  <div class="content">
+    <p>
+      <span class="bold uppercase">“KOSTPROBE?”</span>
+      is an interactive object that can be used as a one-click drinking automat. The virtual environment
+      reflects in real time the 360 view of the automat’s insides. In the moment of drinking the warm,
+      yellow liquid the view changes to an abstract, expanded reality.
+    </p>
+    <p class="ellipsis">...</p>
+  </div>
+
+  <div class="link">
+    <p>
+      <Link
+        href="https://www.facebook.com/events/443161979890572/"
+        nofollow={true}
+        noreferrer={true}
+      >
+        @ Roboexotica 2019
+      </Link>
+    </p>
+  </div>
+</div>
