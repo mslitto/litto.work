@@ -8,6 +8,6 @@ export { default as AboutPage } from './components/AboutPage.svelte'
 export { default as BackButton } from './components/BackButton.svelte'
 
 export * as is from './is'
-export { on, off }  from './onoff'
+export { on, off } from './onoff'
 export * as draggable from './draggable'
 export { cl } from './cl'
