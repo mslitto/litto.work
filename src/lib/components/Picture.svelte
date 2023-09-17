@@ -52,7 +52,7 @@ if (!pictureClass.includes('Picture')) {
 
 <picture class={pictureClass}>
   {#each srcsets as srcset}
-    <source srcset={srcset} />
+    <source {srcset} />
   {/each}
 
   <img class={imgClass} {src} {alt} {role} {height} {width} />
