@@ -6,7 +6,6 @@ const manualChunks = (id : string) => {
     return 'vendor'
   }
 
-  console.log(id)
   return 'index'
 }
 
