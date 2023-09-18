@@ -1,31 +1,18 @@
-<script>
+<script lang="ts">
 import { is } from '$lib'
 import { page } from '$app/stores'
 
-/** @type number | string | undefined*/
-export let height
+export let height : number | string | undefined
+export let width : number | string | undefined
+export let webp : boolean = true
+export let avif : boolean = false
+export let alt : string = ''
+export let role : string | null = null
+export let pictureClass : string = 'Picture'
+export let imgClass : string | undefined = ''
+export let src : string
 
-/** @type number | string | undefined */
-export let width
-
-/** @type boolean */
-export let webp = true
-
-/** @type boolean */
-export let avif = false
-
-export let alt = ''
-
-/** @type string | null */
-export let role = null
-/** @type string */
-export let pictureClass = 'Picture'
-/** @type string | undefined */
-export let imgClass = ''
-/** @type string */
-export let src
-
-if (!src.includes($page.url.pathname)) {
+if (!src.startsWith('/') && !src.includes($page.url.pathname)) {
   src = `/img${$page.url.pathname}${src}`
 }
 
@@ -33,8 +20,7 @@ if ((alt === '' && !role) || !is.str(role)) {
   role = 'presentation'
 }
 
-/** @type string[] */
-const srcsets = []
+const srcsets : string[] = []
 
 if (webp !== false) {
   srcsets.push(src.replace(/\.(jpg|png|gif)$/, '.webp'))
@@ -58,10 +44,25 @@ if (!pictureClass.includes('Picture')) {
   <img class={imgClass} {src} {alt} {role} {height} {width} />
 </picture>
 
-<style>
+<style lang="scss">
   img {
     max-width: 100%;
     max-height: 100%;
     height: auto;
+
+    &.inline {
+      width: 50%;
+      margin: 0 1em 1em 0;
+      height: auto;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    img {
+      &.inline {
+        width: 100%;
+        margin: 0 0 1em;
+      }
+    }
   }
 </style>
