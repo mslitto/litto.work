@@ -1,36 +1,33 @@
-<script type="ts">
+<script lang="ts">
   import { onMount } from 'svelte'
 
-  import { DraggableLink, on, off } from '$lib/index'
+  import { DraggableLink, on, off } from '$lib'
 
-  import { zIndex, activeID, lastID } from '$lib/stores/index'
+  import { zIndex, activeID, lastID } from '$lib/stores'
 
-  /** @type string */
-  export let src
+  export let external: string | boolean = ''
+  export let src: string
+  export let href: string = ''
+  export let pictureClass: string = ''
+  export let webp: boolean = true
 
-  /** @type string */
-  export let href = ''
-
-  /** @type string */
-  export let pictureClass = ''
-
-  /** @type boolean*/
-  export let webp = true
-
-  /** @type boolean */
-  const external = !href.startsWith('/') && !href.startsWith('#')
-
-  /** @type HTMLElement */
-  let draggableRef
-  /** @type HTMLImageElement */
-  let pictureRef
+  let draggableRef: HTMLElement
+  let pictureRef: HTMLImageElement
 
   const offset = {
     left: 0,
     top: 0,
   }
 
-  let style = {
+  type Style = {
+    left: string
+    top: string
+    transition: string | null
+    opacity: string | null
+    zIndex: number
+  }
+
+  let style: Style = {
     left: '100%',
     top: '100%',
     transition: null,
@@ -52,15 +49,15 @@
     pos.top = `-${pos.top}`
   }
 
-  export const getPos = e => parseInt(e.replace('%', ''))
+  export const getPos = (e: string) => parseInt(e.replace('%', ''))
 
-  export const percentFromPixels = (dir, px) =>
+  export const percentFromPixels = (dir: 'Width' | 'Height', px: number) =>
     (px / window[`inner${dir}`]) * 100
 
-  export const pixelsFromPercent = (dir, pc) =>
+  export const pixelsFromPercent = (dir: 'Width' | 'Height', pc: number) =>
     (pc * window[`inner${dir}`]) / 100
 
-  export const touchHandler = (event) => {
+  export const touchHandler = (event: TouchEvent) => {
     const touch = event.changedTouches[0]
 
     let evt = 'mouseup'
@@ -87,14 +84,14 @@
     return false
   }
 
-  export const isOutOfBounds = (e) =>
+  export const isOutOfBounds = (e: MouseEvent) =>
     e.clientX >= window.innerWidth ||
     e.clientX <= 0 ||
     e.clientY >= window.innerHeight ||
     e.clientY <= 0
 
-  export const onDrag = (evt) => {
-    const { target } = evt
+  export const onDrag = (evt: MouseEvent) => {
+    const target = evt.target as HTMLElement
     if ($activeID === src || target.tagName !== 'IMG') {
       return
     }
@@ -111,9 +108,9 @@
     style.opacity = '0.8'
 
     // document.addEventListener('mousemove', onMousemove)
-    on(document, 'mousemove', onMousemove)
-    on(document, 'mouseup', onDrop)
-    on(document, 'mouseout', onDropIfOutOfBounds)
+    on(document, 'mousemove', onMousemove as (e: Event) => boolean | void)
+    on(document, 'mouseup', onDrop as (e: Event) => boolean | void)
+    on(document, 'mouseout', onDropIfOutOfBounds as (e: Event) => boolean | void)
   }
 
   export const onDrop = () => {
@@ -127,18 +124,18 @@
     style.transition = null
     style.opacity = '1'
 
-    off(document, 'mousemove', onMousemove)
-    off(document, 'mouseup', onDrop)
-    off(document, 'mouseout', onDropIfOutOfBounds)
+    off(document, 'mousemove', onMousemove as (e: Event) => boolean | void)
+    off(document, 'mouseup', onDrop as (e: Event) => boolean | void)
+    off(document, 'mouseout', onDropIfOutOfBounds as (e: Event) => boolean | void)
   }
 
-  const onDropIfOutOfBounds = (e) => {
+  const onDropIfOutOfBounds = (e: MouseEvent) => {
     if (isOutOfBounds(e)) {
       onDrop()
     }
   }
 
-  export const onMousemove = (evt) => {
+  export const onMousemove = (evt: MouseEvent): void => {
     if (draggableRef) {
       const max = {
         left: window.innerWidth - draggableRef.clientWidth,
@@ -166,11 +163,8 @@
     const boundingClientRect = tar.getBoundingClientRect()
     let width = boundingClientRect.width
     let height = boundingClientRect.height
-
-    /** @type number */
-    let left = 0
-    /** @type number */
-    let top = 0
+    let left: number | string = '0'
+    let top: number | string = '0'
 
     // resize if too wide
     const maxWidth = window.innerWidth * 0.7
@@ -223,7 +217,7 @@
 </script>
 
 <div
-  role="presentation"
+  role="none"
   class="Draggable"
   class:dragged={$activeID === src}
   class:dropped={$lastID === src}
