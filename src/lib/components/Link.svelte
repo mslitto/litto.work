@@ -1,22 +1,37 @@
-<script>
+<script lang="ts">
 
-/** @type string */
-export let href
+export let href : string
 
-/** @type boolean */
-export let nofollow = true
+export let nofollow : boolean = true
 
-/** @type boolean */
-export let noreferrer = true
+export let noreferrer : boolean = true
 
-/** @type boolean */
-const isLocal = href[0] === '/' || href[0] === '#'
+export let className : string | null = null
 
-/** @type string | undefined */
-const target = isLocal ? '_blank' : undefined
+export let dark : boolean = false
+export let underline : boolean = false
 
-/** @type string | undefined */
-let rel = undefined
+if (dark) {
+  if (!className) {
+    className = 'dark'
+  } else if (!className.includes('dark')) {
+    className += ' dark'
+  }
+}
+
+if (underline) {
+  if (!className) {
+    className = 'underline'
+  } else if (!className.includes('underline')) {
+    className += ' underline'
+  }
+}
+
+const isLocal : boolean = href[0] === '/' || href[0] === '#'
+
+const target :string | undefined = isLocal ? '_blank' : undefined
+
+let rel : string | undefined = undefined
 
 if (!isLocal) {
   rel = 'noopener'
@@ -30,4 +45,18 @@ if (!isLocal) {
 }
 </script>
 
-<a {href} {rel} {target}><slot /></a>
+<a class={className} {href} {rel} {target}><slot /></a>
+
+<style lang="scss">
+  .underline {
+    text-decoration: underline;
+  }
+
+  .dark {
+    color: var(--link-color-dark);
+
+    &:hover {
+      color: var(--link-hover-color);
+    }
+  }
+</style>
