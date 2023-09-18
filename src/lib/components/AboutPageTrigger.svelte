@@ -1,4 +1,4 @@
-<script type="ts">
+<script lang="ts">
   import { isAboutPageOpen } from '$lib/stores/index'
 
   const toggle = () => {
