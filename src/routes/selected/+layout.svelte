@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 import { classList } from 'svelte-body'
 import { BackButton } from '$lib'
 </script>
@@ -9,7 +9,7 @@ import { BackButton } from '$lib'
 
 <slot />
 
-<style type="scss">
+<style lang="scss">
   :global(.Single) {
     height: auto;
     display: inline-block;
