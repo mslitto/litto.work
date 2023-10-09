@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { AboutPageTrigger, Picture } from '@components'
+  import { Link, Picture } from '@components'
 
   import { isOpen } from '@stores/aboutPageStore'
 
@@ -128,9 +128,7 @@
         </ul>
       </div>
       <div class="link">
-        <a href="https://artificialmuseum.com" target="_blank" rel="nofollow noopener noreferrer"
-          >Artificial Museum</a
-        >
+        <Link href="https://artificialmuseum.com">Artificial Museum</Link>
       </div>
       <div class="link">
         <a href="https://thesystem.at" target="_blank" rel="nofollow noopener noreferrer"
