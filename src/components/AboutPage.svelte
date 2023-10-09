@@ -6,4 +6,3 @@
   <AboutPageTrigger />
   <AboutPageContent />
 </div>
-
