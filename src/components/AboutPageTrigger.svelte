@@ -26,7 +26,7 @@
 </a>
 
 <style lang="scss">
-  .about-page-trigger {
+  * {
     position: fixed;
     left: auto;
     right: 0;
@@ -36,5 +36,6 @@
     z-index: 1000000;
     font-family: sans-serif;
     color: var(--black);
+    margin: 0 15px 0 0;
   }
 </style>
