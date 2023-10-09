@@ -1,0 +1,27 @@
+---
+export interface Props {
+  href: string
+  nofollow?: boolean
+  noreferrer?: boolean
+}
+
+const { href, nofollow, noreferrer } = Astro.props as Props
+
+const isLocal = href[0] === '/' || href[0] === '#'
+
+const target = isLocal ? '_blank' : undefined
+let rel: string | undefined = undefined
+
+if (!isLocal) {
+  rel = 'noopener'
+
+  if (nofollow) {
+    rel += ' nofollow'
+  }
+  if (noreferrer) {
+    rel += ' noreferrer'
+  }
+}
+---
+
+<a {href} {rel} {target}><slot /></a>

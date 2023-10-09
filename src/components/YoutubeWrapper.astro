@@ -1,0 +1,40 @@
+---
+export interface Props {
+  id: string
+  width?: string | number
+  height?: string | number
+  title?: string
+}
+
+const { id, width, height, title } = Astro.props as Props
+---
+
+<div class="YoutubeWrapper">
+  <iframe
+    title={title}
+    width={width}
+    height={height}
+    src={`https://www.youtube.com/embed/${id}`}
+    frameborder="0"
+    allowfullscreen
+  >
+  </iframe>
+</div>
+
+<style lang="scss">
+  .YoutubeWrapper {
+    margin: 2.5% 0;
+    height: 0;
+    position: relative;
+    padding-bottom: 56.25%;
+  }
+
+  iframe {
+    background-color: var(--video-background-color);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+</style>

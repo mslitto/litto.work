@@ -1,0 +1,6 @@
+export { default as Link } from './Link.astro'
+export { default as Picture } from './Picture.astro'
+export { default as YoutubeWrapper } from './YoutubeWrapper.astro'
+export { default as DraggableLink } from './DraggableLink.svelte'
+export { default as AboutPageTrigger } from './AboutPageTrigger.svelte'
+export { default as AboutPage } from './AboutPage.svelte'

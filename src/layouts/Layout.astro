@@ -1,0 +1,29 @@
+---
+import '../css/index.scss'
+
+import { AboutPage } from '@components'
+
+export interface Props {
+  title?: string
+  class?: string
+}
+
+const { title = 'Litto @ Work', class: className } = Astro.props as Props
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/ico" href="/favicon.ico" />
+    <title>{title}</title>
+  </head>
+  <body class={className}>
+    <main>
+      <slot />
+
+      <AboutPage client:load />
+    </main>
+  </body>
+</html>

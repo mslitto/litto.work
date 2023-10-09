@@ -1,0 +1,31 @@
+---
+import Layout from './Layout.astro'
+
+import BackButton from '../components/BackButton.svelte'
+
+const { title } = Astro.props
+---
+
+<Layout title={title} class="Single">
+  <BackButton />
+
+  <slot />
+</Layout>
+
+<style lang="scss">
+  :global(.Single) {
+    height: auto;
+    padding: 0 0 5em;
+    overflow: inherit;
+  }
+
+  picture {
+    height: 0;
+    width: 0;
+  }
+
+  img {
+    height: 0;
+    width: 0;
+  }
+</style>

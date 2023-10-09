@@ -1,0 +1,63 @@
+---
+import { is } from '@lib'
+
+export interface Props {
+  pictureClass?: string
+  imgClass?: string | undefined
+  src: string
+  webp?: boolean
+  avif?: boolean
+  alt?: string
+  width: string | number
+  height: string | number
+
+  role?: any
+}
+
+const { height, width, webp = true, avif = false, alt = '' } = Astro.props as Props
+
+let { role = undefined, pictureClass = 'Picture', imgClass = undefined, src } = Astro.props as Props
+
+const { pathname } = Astro.url
+
+if (!src.startsWith(pathname)) {
+  if (src.startsWith('/')) {
+    src = src.substring(1)
+  }
+
+  src = `/img/${pathname}${src}`
+}
+
+if ((alt === '' && !role) || !is.str(role)) {
+  role = 'presentation'
+}
+
+const srcsets: string[] = []
+
+if (webp !== false) {
+  srcsets.push(src.replace(/\.(jpg|png|gif)$/, '.webp'))
+}
+
+// avif is disabled by default
+if (avif !== false) {
+  srcsets.push(src.replace(/\.(jpg|png|gif)$/, '.webp'))
+}
+
+if (!pictureClass.includes('Picture')) {
+  pictureClass = `Picture ${pictureClass ? pictureClass : undefined}`
+}
+---
+
+<picture class:list={pictureClass}>
+  {srcsets.map(srcset => <source srcset={srcset} />)}
+
+  <img class:list={{ imgClass }} src={src} alt={alt} role={role} height={height} width={width} />
+</picture>
+
+<style>
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+  }
+</style>
