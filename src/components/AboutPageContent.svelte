@@ -13,7 +13,7 @@
     <div>
       <div>
         <Picture
-          class="about-page-img"
+          imgClass="about-page-img"
           src="/img/me.jpg"
           height="800"
           width="800"
@@ -21,72 +21,134 @@
           role="presentation"
         />
 
-        <p>
+        <!-- <p>
           LITTO / Daniela Weiss
           <br />
           *1984, Vienna
-        </p>
+        </p> -->
       </div>
 
       <h4 class="header">
-        In Litto's virtual world, rules are undefined, rites are reversed and perception is twisted,
-        places participate as players, identities become blurred and time glitches away.
+        Rules are undefined, rites are reversed and perception is twisted, places participate as
+        players, identities become blurred and time glitches away.
       </h4>
 
       <p class="clearboth">
-        Her art research deals with the intersections between the physical, virtual and imaginative
-        worlds. She uses a multi-disciplinary approach, utilizing analogue skills, programming and
-        3d art to create immersive experiences.
+        Litto / Daniela Weiss is a media artist who examines the worlds of analogue and digital art
+        in form of VR and AR installations. Having a background in visual arts and applied Business
+        Administration, she also began her studies in digital art in 2017 and Experimental Game
+        Cultures in 2021 (Vienna University of Applied Arts), expanding her artistic research from
+        interaction design and UX Design to the field of mixed reality. In 2020 , she co-founded the
+        web-based AR platform <Link dark={true} underline={true} href="https://artificialmuseum.com"
+          >the Artificial Museum</Link
+        >
+        and build interactive AR sculptures in public space. The mirror is a continuous symbol in her
+        work.
       </p>
 
       <div class="cv">
         <h5>Individual participation in Exhibitions/Festivals/Conferences (selected)</h5>
 
         <ul>
-          <li>2022 »FaceMirror«, Hybrid Biennale, Hellerau, Dresden, Germany</li>
-          <li>2022 »Hr. Litto: speaking«, CIVA Festival, Belvedere 21, Vienna, Austria</li>
-          <li>2021 »MirroredSpaces«, ARS Electronica, Linz, Austria</li>
-          <li>2021 »ArtificialMuseum«, Places VR Festival 2021, Gelsenkirchen, Germany</li>
           <li>
-            2021 »MirroredSpaces«, Angewandte Festival / University of Applied Arts, Vienna, Austria
+            2023 »Aaron Swartz« <b>ARS Electronica 2023</b> In cooperation with Schuberttheater and Hidéo
+            SNES, Linz, Austria
           </li>
-          <li>2021 »RealMirror«, In the Kitchen, Medienwerkstatt, Vienna, Austria</li>
-          <li>2020 Gallerie Frewein-Kazakbaev, Vienna, Austria</li>
+          <li>2023 »Reterritorialized Spaces«, <b>Parallel Vienna</b> ArteCont, Austria</li>
+
           <li>
-            2020 »Vorspiel« Navigieren im Postdigitalen, Angewandte Innovation Laboratory, Vienna,
+            2023 »Reterritorialized Spaces« <b>Wiener Lichtblicke</b> Justizpalast, Vienna, Austria
+          </li>
+
+          <li>2023 »Das Vorpsiel« <b>ARSE Electronica</b> Monochrom, Linz, Austria</li>
+          <li>
+            2023 »Reterritorialized Spaces« Vienna Digital Summer <b>ArteCont</b> Virtual Exhibition
+            Vienna, Austria
+          </li>
+          <li>
+            2023 »Reterritorialized Spaces« <b>Symposion Lindabrunn</b> Enzesfeld-Lindabrunn, Austria
+          </li>
+          <li>
+            2023 »Inside Out« with Hidéo SNES <b>Gallery Frewein-Kazakbaev</b>, Vienna, Austria
+          </li>
+          <li>2023 »Game Over or Replay«, <b>A MAZE Festival</b> Berlin, Germany</li>
+          <br />
+          <li>
+            2022 »Game Over or Replay«, Next Generation, <b>Galarie Monfort</b>, Portorož, Slovenia
+          </li>
+          <li>
+            2022 »Real Mirror« Re.pairing Future, Digital Art Dep. <b>CRIATECH Festival 2022</b>,
+            Aveiro, Portugal
+          </li>
+          <li>2022 »Reterritorialized Spaces« <b>Demo Festival</b>, Schlanders, South Tirol</li>
+          <li>2022 »Reterritorialized Spaces«, <b>Parallel Vienna</b>, Austria</li>
+          <li>
+            2022 »Game Over or Replay«, <b>Angewandte Festival</b> / University of Applied Arts, Vienna,
             Austria
           </li>
-          <li>2019 »Kostprobe?«, Roboexotica 2019, Vienna, Austria</li>
-          <li>2019 »RealMirror«, Klangmanifeste, Echoräume, Vienna, Austria</li>
-          <li>2019 HACKIDC Digital Art Exhibition 2019 IDC Herzliya, Tel Aviv, Israel</li>
+          <li>2022 »FaceMirror«, <b>Hybrid Biennale</b>, Hellerau, Dresden, Germany</li>
+          <li>2022 »Hr. Litto: speaking«, CIVA Festival, <b>Belvedere 21</b>, Vienna, Austria</li>
+          <br />
+          <li>2021 »MirroredSpaces«, <b>ARS Electronica</b>, Linz, Austria</li>
+          <li>2021 »RealMirror«, In the Kitchen, <b>Medienwerkstatt</b>, Vienna, Austria</li>
+          <br />
           <li>
-            2019 »Translation of Complexity«, Solo Exhibition, Reindorfgassen Fest, Sound:frame,
-            Improper Walls, Vienna, Austria
+            2020 »Das Vorspiel« Navigieren im Postdigitalen, <b>Angewandte Innovation Laboratory</b
+            >, Vienna, Austria
           </li>
-          <li>2019 »Vorspiel« Performance, Schwelle 7, Vienna, Austria</li>
+          <br />
+          <li>2019 »Kostprobe?«, <b>Roboexotica 2019</b>, Vienna, Austria</li>
+          <li>2019 »RealMirror«, Klangmanifeste, <b>Echoräume</b>, Vienna, Austria</li>
+          <li>
+            2019 »AR Paintings« HACKIDC Digital Art Exhibition 2019 <b>IDC Herzliya</b>, Tel Aviv,
+            Israel
+          </li>
+          <li>
+            2019 »Translation of Complexity«, Solo Exhibition, Reindorfgassen Fest, <b
+              >Sound:frame, Improper Walls</b
+            > in collab with Artivive, Vienna, Austria
+          </li>
+          <li>2019 »Das Vorspiel« Performance, Schwelle 7, Vienna, Austria</li>
           <li>2019 »Real Mirror«, Glowing Globe, Gallery KORTIL, Rijeka, Croatia</li>
-          <li>2019 ON Public Gallery SEE Djerba, Tunisia</li>
+          <li>2019 »AR Paintings« ON Public Gallery SEE Djerba, Tunisia</li>
           <li>
-            2019 »RealMirror 2.0«, Angewandte Festival / University of Applied Arts, Vienna, Austria
+            2019 »RealMirror 2.0«, <b>Angewandte Festival</b> / University of Applied Arts, Vienna, Austria
           </li>
-          <li>2019 »RealMirror 2.0«, ANIMAFEST, Zagreb, Croatia</li>
+          <li>2019 »RealMirror 2.0«, <b>ANIMAFEST</b>, Zagreb, Croatia</li>
           <li>
             2019 International Student Film Festival, Beit Hashanti Gala Exhibition, Negev Desert,
             Israel
           </li>
-          <li>2019 PARTISANEN, Villa Schapira, Max-Emanuel-Strasse 17, 1180 Vienna, Austria</li>
+          <br />
           <li>
             2018 »RealMirror«, FuckReality, Kunstraum Niederösterreich, Digital Art, University of
             Applied Arts, Vienna, Austria
           </li>
-          <li>2018 Vienna Design Week, Burggasse 98, Vienna, Austria</li>
-          <li>2018 Chengdu Creativity & Design Week, Chengdu, China</li>
-          <li>2018 Bangkok Art And Culture Centre (Bacc), Bangkok, Thailand</li>
-          <li>2017 »Restricted Area #17«, SightSeeing Company & UsusKreativkollektiv</li>
+          <li>
+            2018 »AR Paintings« Vienna Design Week, in collab with Artivive, Burggasse 98, Vienna,
+            Austria
+          </li>
+          <li>
+            2018 »AR Paintings« Chengdu Creativity & Design Week in collab with Artivive, Chengdu,
+            China
+          </li>
+          <li>
+            2018 »AR Paintings« Bangkok Art And Culture Centre (Bacc) n collab with Artivive,
+            Bangkok, Thailand
+          </li>
         </ul>
 
-        <h5>Co-Organized Exhibitions</h5>
+        <h5>Co-Organized and Curated Exhibitions</h5>
         <ul>
+          <li></li>
+          <li>2023 »Reterritorialized Spaces«, Symposion Lindabrunn, Austria</li>
+          <li>
+            2023 »Artificial Museum« A MAZE Festival AR Exhibition on sight Experimental Game
+            Cultures Margarete Jahrmann, Berlin, Germany
+          </li>
+          <li>
+            2023 »Translunar Formations« , in collaboration with PIXFilm Gallery Toronto, Canada
+          </li>
           <li>
             2022 »Electro-Esoteric Avatare Seance«, CIVA Festival, Belvedere 21, Vienna, Austria
           </li>
@@ -97,6 +159,7 @@
 
         <h5>Scholarships</h5>
         <ul>
+          <li>2023 Symposion Lindabrunn, Enzesfeld-Lindabrunn, Austria</li>
           <li>2022 Hellerau, Dresden, Germany</li>
           <li>2021 Dialogfelder Eins, Klub Solitär e.V., Chemnitz Germany</li>
           <li>2017 Austrian Days in Gdansk – Sopot – Gdynia, Gdansk Poland</li>
@@ -105,8 +168,8 @@
         <h5>Experience</h5>
         <ul>
           <li>
-            2017 - 2022 artistic practice in Augmented Reality and Virtual Reality, Three.js,
-            Blender 3D, Touch Designer
+            2017 - 2023 artistic practice in Augmented Reality and Virtual Reality, Javascript,
+            Three.js, Blender 3D, Touch Designer, Unreal Engine
           </li>
           <li>
             2010 - 2017 User Experience and Web Design, Freelancing: Berlin, Amsterdam, Vienna
@@ -119,6 +182,8 @@
 
         <h5>Education</h5>
         <ul>
+          <li>2020 – now Artificial Museum artistic direction artistic research and development</li>
+          <li>2021 – now SystemKollektiv workshop, teaching, curation, organisation</li>
           <li>2021-2022 Experimental Game Cultures, University of Applied Arts, Vienna, Austria</li>
           <li>2016 - 2022 Digital Art, University of Applied Arts, Vienna, Austria</li>
           <li>2012 Graduation Communication Design, Die Graphische, Vienna, Austria</li>
@@ -128,45 +193,34 @@
         </ul>
       </div>
       <div class="link">
-        <Link href="https://artificialmuseum.com">Artificial Museum</Link>
-      </div>
-      <div class="link">
-        <a href="https://thesystem.at" target="_blank" rel="nofollow noopener noreferrer"
-          >SystemKollektiv</a
+        <Link dark={true} underline={true} href="https://artificialmuseum.com"
+          >Artificial Museum</Link
         >
       </div>
       <div class="link">
-        <a href="mailto:litto.eu@gmail.com" target="_blank" rel="nofollow noopener noreferrer"
-          >mail</a
+        <Link dark={true} underline={true} href="https://thesystem.at">SystemKollektiv</Link>
+      </div>
+      <div class="link">
+        <Link dark={true} underline={true} href="mailto:litto.eu@gmail.com">mail</Link>
+      </div>
+
+      <div class="link">
+        <Link dark={true} underline={true} href="https://www.instagram.com/ms.litto/"
+          >instagram</Link
         >
       </div>
 
       <div class="link">
-        <a href="https://twitter.com/ms_litto" target="_blank" rel="nofollow noopener noreferrer"
-          >twitter</a
-        >
-      </div>
-
-      <div class="link">
-        <a
-          href="https://www.instagram.com/ms.litto/"
-          target="_blank"
-          rel="nofollow noopener noreferrer">instagram</a
-        >
-      </div>
-
-      <div class="link">
-        <a
+        <Link
+          dark={true}
+          underline={true}
           href="https://www.youtube.com/channel/UCcxT3SlAYNaOL3sEuRNH90w?view_as=subscriber"
-          target="_blank"
-          rel="nofollow noopener noreferrer">youtube</a
+          >youtube</Link
         >
       </div>
 
       <div class="link">
-        <a href="https://github.com/mslitto" target="_blank" rel="nofollow noopener noreferrer"
-          >github</a
-        >
+        <Link dark={true} underline={true} href="https://github.com/mslitto">github</Link>
       </div>
     </div>
   </div>
@@ -175,7 +229,7 @@
 <style lang="scss">
   /* About Page */
   .about-page {
-    background-color: rgba(255, 0, 132, 0.9);
+    // background-color: rgba(250,0,110, 0.9);
     font-weight: 200;
     font-size: 20px;
     opacity: 0;
@@ -204,14 +258,20 @@
 
     h5 {
       font-weight: bold;
+      font-size: 0.9em;
+    }
+
+    .content {
+      background: linear-gradient(
+        -180deg,
+        rgba(199, 128, 178, 0.3) 0%,
+        rgba(250, 0, 110, 0.9) 100%
+      );
     }
   }
 
-  .about-page-img {
-    width: 50%;
-    float: left;
-    margin: 0 1em 1em 0;
-    height: auto;
+  li {
+    margin: 0 0 0.6em;
   }
 
   .header {
@@ -220,10 +280,16 @@
   }
 
   .content {
-    margin: 0 5%;
+    padding: 0 5% 200px;
     color: var(--black);
-    padding: 0 0 200px;
     text-align: left;
+
+    :global(.about-page-img) {
+      width: 100%;
+      float: left;
+      margin: 0 1em 1em 0;
+      height: auto;
+    }
 
     p {
       margin: 0.8em 0;
@@ -241,6 +307,39 @@
         &:hover {
           color: var(--link-hover-color);
         }
+      }
+    }
+  }
+
+  @media screen and (min-width: 800px) {
+    .header {
+      clear: none;
+      font-size: 1.8em;
+    }
+    .content {
+      position: absolute;
+      top: 0;
+      width: 100%;
+
+      > div {
+        max-width: 950px;
+        margin: 0 auto;
+      }
+
+      :global(.about-page-img) {
+        width: 40%;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1180px) {
+    .header {
+      font-size: 2.2em;
+    }
+
+    .content {
+      :global(.about-page-img) {
+        width: 30%;
       }
     }
   }
