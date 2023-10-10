@@ -168,7 +168,7 @@
     let top: number | string = '0'
 
     // resize if too wide
-    const maxWidth = window.innerWidth * 0.7
+    const maxWidth = window.innerWidth * 0.9
     if (width > maxWidth) {
       const widthPercent = width / maxWidth + 0.1
       width /= widthPercent
@@ -268,9 +268,10 @@
 
     .bg {
       display: inline-block;
+
       source,
       img {
-        max-width: 35vw;
+        max-width: 60vw;
         max-height: 40vh;
       }
     }
@@ -280,8 +281,8 @@
 
       source,
       img {
-        max-width: 20vw;
-        max-height: 20vh;
+        max-width: 60vw;
+        max-height: 35vh;
       }
     }
 
@@ -300,6 +301,18 @@
         img {
           box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
         }
+      }
+    }
+  }
+
+  @media screen and (min-width: 800px) {
+    .Draggable {
+      .bg {
+        max-width: 40vw;
+      }
+
+      .bg2 {
+        max-width: 40vw;
       }
     }
   }
