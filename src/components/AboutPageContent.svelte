@@ -271,7 +271,6 @@
 
     .content {
       background: linear-gradient(
-        -180deg,
         rgba(255, 189, 235, 0.9) 0%,
         rgba(250, 0, 110, 0.9) 100%
       );
