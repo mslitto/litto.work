@@ -40,7 +40,9 @@
         Cultures in 2021 (Vienna University of Applied Arts), expanding her artistic research from
         interaction design and UX Design to the field of mixed reality. In 2020, she co-founded the
         web-based AR platform
-        <Link dark={true} underline={true} href="https://artificialmuseum.com">the Artificial Museum</Link>
+        <Link class="dark underline" href="https://artificialmuseum.com">
+          the Artificial Museum
+        </Link>
         and build interactive AR sculptures in public space. The mirror is a continuous symbol in her
         work.
       </p>
@@ -53,24 +55,25 @@
             2023 »Aaron Swartz« <b>ARS Electronica 2023</b> In cooperation with Schuberttheater and Hidéo
             SNES, Linz, Austria
           </li>
-          <li>2023 »Reterritorialized Spaces«, <b>Parallel Vienna</b> ArteCont, Austria</li>
+          <li>2023 »Reterritorialized Spaces«, <b>Parallel Vienna</b>, ArteCont, Austria</li>
 
           <li>
-            2023 »Reterritorialized Spaces« <b>Wiener Lichtblicke</b> Justizpalast, Vienna, Austria
+            2023 »Reterritorialized Spaces« <b>Wiener Lichtblicke</b>, Justizpalast, Vienna, Austria
           </li>
 
-          <li>2023 »Das Vorpsiel« <b>ARSE Electronica</b> Monochrom, Linz, Austria</li>
+          <li>2023 »Das Vorspiel« <b>ARSE Electronica</b>, Monochrom, Linz, Austria</li>
           <li>
-            2023 »Reterritorialized Spaces« Vienna Digital Summer <b>ArteCont</b> Virtual Exhibition
-            Vienna, Austria
+            2023 »Reterritorialized Spaces« <b>Vienna Digital Summer</b>, ArteCont, Virtual
+            Exhibition Vienna, Austria
           </li>
           <li>
-            2023 »Reterritorialized Spaces« <b>Symposion Lindabrunn</b> Enzesfeld-Lindabrunn, Austria
+            2023 »Reterritorialized Spaces« <b>Symposion Lindabrunn</b>, Enzesfeld-Lindabrunn,
+            Austria
           </li>
           <li>
             2023 »Inside Out« with Hidéo SNES <b>Gallery Frewein-Kazakbaev</b>, Vienna, Austria
           </li>
-          <li>2023 »Game Over or Replay«, <b>A MAZE Festival</b> Berlin, Germany</li>
+          <li>2023 »Game Over or Replay«, <b>A MAZE Festival</b>, Berlin, Germany</li>
           <br />
           <li>
             2022 »Game Over or Replay«, Next Generation, <b>Galarie Monfort</b>, Portorož, Slovenia
@@ -80,7 +83,10 @@
             Aveiro, Portugal
           </li>
           <li>2022 »Reterritorialized Spaces« <b>Demo Festival</b>, Schlanders, South Tirol</li>
-          <li>2022 »Reterritorialized Spaces«, <b>Parallel Vienna</b>, Austria</li>
+          <li>
+            2022 »Reterritorialized Spaces«, <b>Parallel Vienna</b>, Semmelweisklinik, Vienna,
+            Austria
+          </li>
           <li>
             2022 »Game Over or Replay«, <b>Angewandte Festival</b> / University of Applied Arts, Vienna,
             Austria
@@ -115,17 +121,17 @@
           </li>
           <li>2019 »RealMirror 2.0«, <b>ANIMAFEST</b>, Zagreb, Croatia</li>
           <li>
-            2019 International Student Film Festival, <b>Beit Hashanti Gala Exhibition</b>, Negev Desert,
-            Israel
+            2019 International Student Film Festival, <b>Beit Hashanti Gala Exhibition</b>, Negev
+            Desert, Israel
           </li>
           <br />
           <li>
-            2018 »RealMirror«, FuckReality, <b>Kunstraum Niederösterreich</b>, Digital Art, University of
-            Applied Arts, Vienna, Austria
+            2018 »RealMirror«, FuckReality, <b>Kunstraum Niederösterreich</b>, Digital Art,
+            University of Applied Arts, Vienna, Austria
           </li>
           <li>
-            2018 »AR Paintings« <b>Vienna Design Week</b>, in collab with Artivive, Burggasse 98, Vienna,
-            Austria
+            2018 »AR Paintings« <b>Vienna Design Week</b>, in collab with Artivive, Burggasse 98,
+            Vienna, Austria
           </li>
           <li>
             2018 »AR Paintings« <b>Chengdu Creativity & Design Week</b> in collab with Artivive, Chengdu,
@@ -183,8 +189,10 @@
         <ul>
           <li>2020 – now Artificial Museum artistic direction artistic research and development</li>
           <li>2021 – now SystemKollektiv workshop, teaching, curation, organisation</li>
-          <li>2021-2022 Experimental Game Cultures, University of Applied Arts, Vienna, Austria</li>
-          <li>2016 - 2022 Digital Art, University of Applied Arts, Vienna, Austria</li>
+          <li>
+            2021 – 2022 Experimental Game Cultures, University of Applied Arts, Vienna, Austria
+          </li>
+          <li>2016 – 2022 Digital Art, University of Applied Arts, Vienna, Austria</li>
           <li>2012 Graduation Communication Design, Die Graphische, Vienna, Austria</li>
           <li>
             2009 Graduation Business Administration at Business University (Mag), Vienna, Austria
@@ -192,35 +200,35 @@
         </ul>
       </div>
 
-      <div class="link">
-        <Link dark={true} underline={true} href="https://artificialmuseum.com"
-          >Artificial Museum</Link
-        >
-      </div>
-      <div class="link">
-        <Link dark={true} underline={true} href="https://thesystem.at">SystemKollektiv</Link>
-      </div>
-      <div class="link">
-        <Link dark={true} underline={true} href="mailto:litto.eu@gmail.com">mail</Link>
-      </div>
+      <div class="links">
+        <div class="link">
+          <Link class="dark underline" href="https://artificialmuseum.com">Artificial Museum</Link>
+        </div>
 
-      <div class="link">
-        <Link dark={true} underline={true} href="https://www.instagram.com/ms.litto/"
-          >instagram</Link
-        >
-      </div>
+        <div class="link">
+          <Link class="dark underline" href="https://thesystem.at">SystemKollektiv</Link>
+        </div>
 
-      <div class="link">
-        <Link
-          dark={true}
-          underline={true}
-          href="https://www.youtube.com/channel/UCcxT3SlAYNaOL3sEuRNH90w?view_as=subscriber"
-          >youtube</Link
-        >
-      </div>
+        <div class="link">
+          <Link class="dark underline" href="mailto:litto.eu@gmail.com">mail</Link>
+        </div>
 
-      <div class="link">
-        <Link dark={true} underline={true} href="https://github.com/mslitto">github</Link>
+        <div class="link">
+          <Link class="dark underline" href="https://www.instagram.com/ms.litto/">instagram</Link>
+        </div>
+
+        <div class="link">
+          <Link
+            class="dark underline"
+            href="https://www.youtube.com/channel/UCcxT3SlAYNaOL3sEuRNH90w"
+          >
+            youtube
+          </Link>
+        </div>
+
+        <div class="link">
+          <Link class="dark underline" href="https://github.com/mslitto">github</Link>
+        </div>
       </div>
     </div>
   </div>
@@ -264,7 +272,7 @@
     .content {
       background: linear-gradient(
         -180deg,
-        rgba(255, 189, 235, 0.5) 10%,
+        rgba(255, 189, 235, 0.8) 10%,
         rgba(250, 0, 110, 0.9) 100%
       );
     }
