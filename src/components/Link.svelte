@@ -5,6 +5,8 @@
   export let dark: boolean = false
   export let bold: boolean = false
   export let underline: boolean = false
+  let className: string = ''
+  export { className as class }
 
   const isLocal: boolean = href[0] === '/' || href[0] === '#'
 
@@ -21,20 +23,9 @@
       rel += ' noreferrer'
     }
   }
-
-  let className = ''
-  if (dark) {
-    className += ' dark'
-  }
-  if (underline) {
-    className += ' underline'
-  }
-  if (bold) {
-    className += ' bold'
-  }
 </script>
 
-<a class={className.trim()} {href} {rel} {target}><slot /></a>
+<a class={className} {href} {rel} {target}><slot /></a>
 
 <style lang="scss">
   :global(.dark) {
