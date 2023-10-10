@@ -2,17 +2,17 @@
   --white: #fefefe;
   --black: #171821;
 
-  --body-background-color: #171821;
+  --body-background-color: #fafafa;
   --accent-color: #666;
   --wrapper-text-color: #333;
 
-  --text-color: var(--white);
-  --text-color-subtle: var(--white);
-  --text-color-light: var(--white);
+  --text-color: #333;
+  --text-color-subtle: #333;
+  --text-color-light: #333;
 
-  --link-color: #ff0084;
+  --link-color: #fa006ee6;
   --link-hover-color: var(--white);
-  --link-hover-color-svg: #ff0084;
+  --link-hover-color-svg: #fa006ee6;
 
   --padding-side: 1%;
 
@@ -263,6 +263,7 @@ ul {
   font-style: italic;
   font-weight: 200;
   color: var(--text-color-dark);
+  margin: 0 0 2em;
 }
 
 .credits {
@@ -276,7 +277,7 @@ ul {
 .content {
   font-family: 'Noto', sans-serif;
   font-style: normal;
-  color: var(--white);
+  color: var(--text-color);
   line-height: 1.5;
 
   img {
