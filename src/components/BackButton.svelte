@@ -18,6 +18,6 @@
   }
 
   .triangle {
-    fill: var(--white);
+    fill: var(--black);
   }
 </style>

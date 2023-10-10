@@ -30,7 +30,7 @@
 
     &:hover {
       .triangle {
-        width: 70px;
+        width: 100px;
         height: auto;
         fill: var(--link-hover-color-svg);
       }
@@ -42,6 +42,6 @@
   }
 
   .triangle {
-    fill: var(--white);
+    fill: var(--black);
   }
 </style>

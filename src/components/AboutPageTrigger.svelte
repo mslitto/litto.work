@@ -20,8 +20,8 @@
   rel="nofollow noopener noreferrer"
 >
   <picture>
-    <source srcset="/img/litto_white_transp.webp" />
-    <img src="/img/litto_white_transp.png" height="237" width="320" alt="" role="presentation" />
+    <source srcset="/img/logo_b.webp" />
+    <img src="/img/logo_b.png" height="237" width="320" alt="" role="presentation" />
   </picture>
 </a>
 

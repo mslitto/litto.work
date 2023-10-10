@@ -14,7 +14,7 @@
       <div>
         <Picture
           imgClass="about-page-img"
-          src="/img/me.jpg"
+          src="/img/me3.jpg"
           height="800"
           width="800"
           alt=""
@@ -38,10 +38,9 @@
         in form of VR and AR installations. Having a background in visual arts and applied Business
         Administration, she also began her studies in digital art in 2017 and Experimental Game
         Cultures in 2021 (Vienna University of Applied Arts), expanding her artistic research from
-        interaction design and UX Design to the field of mixed reality. In 2020 , she co-founded the
-        web-based AR platform <Link dark={true} underline={true} href="https://artificialmuseum.com"
-          >the Artificial Museum</Link
-        >
+        interaction design and UX Design to the field of mixed reality. In 2020, she co-founded the
+        web-based AR platform
+        <Link dark={true} underline={true} href="https://artificialmuseum.com">the Artificial Museum</Link>
         and build interactive AR sculptures in public space. The mirror is a continuous symbol in her
         work.
       </p>
@@ -109,31 +108,31 @@
             > in collab with Artivive, Vienna, Austria
           </li>
           <li>2019 »Das Vorspiel« Performance, Schwelle 7, Vienna, Austria</li>
-          <li>2019 »Real Mirror«, Glowing Globe, Gallery KORTIL, Rijeka, Croatia</li>
-          <li>2019 »AR Paintings« ON Public Gallery SEE Djerba, Tunisia</li>
+          <li>2019 »Real Mirror«, Glowing Globe, <b>Gallery KORTIL</b>, Rijeka, Croatia</li>
+          <li>2019 »AR Paintings« <b>Public Gallery SEE Djerba</b>, Tunisia</li>
           <li>
             2019 »RealMirror 2.0«, <b>Angewandte Festival</b> / University of Applied Arts, Vienna, Austria
           </li>
           <li>2019 »RealMirror 2.0«, <b>ANIMAFEST</b>, Zagreb, Croatia</li>
           <li>
-            2019 International Student Film Festival, Beit Hashanti Gala Exhibition, Negev Desert,
+            2019 International Student Film Festival, <b>Beit Hashanti Gala Exhibition</b>, Negev Desert,
             Israel
           </li>
           <br />
           <li>
-            2018 »RealMirror«, FuckReality, Kunstraum Niederösterreich, Digital Art, University of
+            2018 »RealMirror«, FuckReality, <b>Kunstraum Niederösterreich</b>, Digital Art, University of
             Applied Arts, Vienna, Austria
           </li>
           <li>
-            2018 »AR Paintings« Vienna Design Week, in collab with Artivive, Burggasse 98, Vienna,
+            2018 »AR Paintings« <b>Vienna Design Week</b>, in collab with Artivive, Burggasse 98, Vienna,
             Austria
           </li>
           <li>
-            2018 »AR Paintings« Chengdu Creativity & Design Week in collab with Artivive, Chengdu,
+            2018 »AR Paintings« <b>Chengdu Creativity & Design Week</b> in collab with Artivive, Chengdu,
             China
           </li>
           <li>
-            2018 »AR Paintings« Bangkok Art And Culture Centre (Bacc) n collab with Artivive,
+            2018 »AR Paintings« <b>Bangkok Art And Culture Centre (Bacc)</b> in collab with Artivive,
             Bangkok, Thailand
           </li>
         </ul>
@@ -192,6 +191,7 @@
           </li>
         </ul>
       </div>
+
       <div class="link">
         <Link dark={true} underline={true} href="https://artificialmuseum.com"
           >Artificial Museum</Link
@@ -264,7 +264,7 @@
     .content {
       background: linear-gradient(
         -180deg,
-        rgba(199, 128, 178, 0.3) 0%,
+        rgba(255, 189, 235, 0.5) 10%,
         rgba(250, 0, 110, 0.9) 100%
       );
     }
