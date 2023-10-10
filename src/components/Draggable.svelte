@@ -109,12 +109,12 @@
     style.opacity = '0.8'
 
     // document.addEventListener('mousemove', onMousemove)
-    on(document, 'mousemove', onMousemove as (e: Event) => boolean | void)
-    on(document, 'mouseup', onDrop as (e: Event) => boolean | void)
-    on(document, 'mouseout', onDropIfOutOfBounds as (e: Event) => boolean | void)
+    on(document, 'mousemove', onMousemove)
+    on(document, 'mouseup', onDrop)
+    on(document, 'mouseout', onDropIfOutOfBounds)
   }
 
-  export const onDrop = () => {
+  export const onDrop = () : boolean | void => {
     if ($activeID !== src) {
       return
     }
@@ -125,18 +125,18 @@
     style.transition = null
     style.opacity = '1'
 
-    off(document, 'mousemove', onMousemove as (e: Event) => boolean | void)
-    off(document, 'mouseup', onDrop as (e: Event) => boolean | void)
-    off(document, 'mouseout', onDropIfOutOfBounds as (e: Event) => boolean | void)
+    off(document, 'mousemove', onMousemove)
+    off(document, 'mouseup', onDrop)
+    off(document, 'mouseout', onDropIfOutOfBounds)
   }
 
-  const onDropIfOutOfBounds = (e: MouseEvent) => {
+  const onDropIfOutOfBounds = (e: MouseEvent) : boolean | void => {
     if (isOutOfBounds(e)) {
       onDrop()
     }
   }
 
-  export const onMousemove = (evt: MouseEvent): void => {
+  export const onMousemove = (evt: MouseEvent): boolean | void => {
     if (draggableRef) {
       const max = {
         left: window.innerWidth - draggableRef.clientWidth,
@@ -218,6 +218,8 @@
 </script>
 
 <div
+  role='button'
+  tabindex="0"
   class="Draggable"
   class:dragged={$activeID === src}
   class:dropped={$lastID === src}
