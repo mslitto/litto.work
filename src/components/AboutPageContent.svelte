@@ -272,7 +272,7 @@
     .content {
       background: linear-gradient(
         -180deg,
-        rgba(255, 189, 235, 0.8) 10%,
+        rgba(255, 189, 235, 0.9) 0%,
         rgba(250, 0, 110, 0.9) 100%
       );
     }
@@ -301,21 +301,6 @@
 
     p {
       margin: 0.8em 0;
-    }
-
-    .link {
-      line-height: 1.9em;
-      padding-right: 10px;
-      float: left;
-
-      a {
-        color: var(--black);
-        text-decoration: underline;
-
-        &:hover {
-          color: var(--link-hover-color);
-        }
-      }
     }
   }
 
