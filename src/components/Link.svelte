@@ -2,9 +2,7 @@
   export let href: string
   export let nofollow: boolean = false
   export let noreferrer: boolean = false
-  export let dark: boolean = false
-  export let bold: boolean = false
-  export let underline: boolean = false
+
   let className: string = ''
   export { className as class }
 
