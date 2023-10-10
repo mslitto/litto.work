@@ -114,7 +114,7 @@
     on(document, 'mouseout', onDropIfOutOfBounds)
   }
 
-  export const onDrop = () : boolean | void => {
+  export const onDrop = (): boolean | void => {
     if ($activeID !== src) {
       return
     }
@@ -130,7 +130,7 @@
     off(document, 'mouseout', onDropIfOutOfBounds)
   }
 
-  const onDropIfOutOfBounds = (e: MouseEvent) : boolean | void => {
+  const onDropIfOutOfBounds = (e: MouseEvent): boolean | void => {
     if (isOutOfBounds(e)) {
       onDrop()
     }
@@ -218,7 +218,7 @@
 </script>
 
 <div
-  role='button'
+  role="button"
   tabindex="0"
   class="Draggable"
   class:dragged={$activeID === src}
@@ -271,8 +271,8 @@
 
       source,
       img {
-        max-width: 60vw;
-        max-height: 40vh;
+        max-width: 80vw;
+        max-height: 30vh;
       }
     }
 
@@ -281,7 +281,7 @@
 
       source,
       img {
-        max-width: 60vw;
+        max-width: 80vw;
         max-height: 35vh;
       }
     }
