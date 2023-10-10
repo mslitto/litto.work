@@ -38,4 +38,9 @@
     color: var(--black);
     margin: 0 15px 0 0;
   }
+
+  img {
+    width: 120px;
+    height: auto;
+  }
 </style>
