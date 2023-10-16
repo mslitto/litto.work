@@ -8,7 +8,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "format": "f -w -e docs node_modules"
+    "format": "f -w -e docs node_modules",
+    "publish": "node bin/publish.js"
   },
   "devDependencies": {
     "@astrojs/svelte": "4.0.3",
