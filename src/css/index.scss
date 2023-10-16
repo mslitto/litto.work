@@ -57,6 +57,7 @@ body {
   width: 100%;
   padding: 0;
   overflow: hidden;
+  overscroll-behavior: none;
 }
 
 body.page {
@@ -244,7 +245,6 @@ ul {
 .intro2 {
   line-height: 1.5;
   font-size: 3em;
-  font-family: 'Noto', sans-serif;
   font-style: italic;
   font-weight: 200;
   color: var(--text-color-light);
@@ -259,7 +259,6 @@ ul {
 .cv {
   line-height: 1.1;
   font-size: 0.8em;
-  font-family: 'Noto', sans-serif;
   font-style: italic;
   font-weight: 200;
   color: var(--text-color-dark);
@@ -275,7 +274,6 @@ ul {
 }
 
 .content {
-  font-family: 'Noto', sans-serif;
   font-style: normal;
   color: var(--text-color);
   line-height: 1.5;
@@ -297,7 +295,7 @@ ul {
   text-transform: uppercase;
 }
 
-.bold {
+.bold, b {
   font-weight: bold;
 }
 
