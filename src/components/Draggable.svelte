@@ -267,26 +267,6 @@
       transition: none;
     }
 
-    .bg {
-      display: inline-block;
-
-      source,
-      img {
-        max-width: 80vw;
-        max-height: 30vh;
-      }
-    }
-
-    .bg2 {
-      display: inline-block;
-
-      source,
-      img {
-        max-width: 80vw;
-        max-height: 35vh;
-      }
-    }
-
     &.dropped {
       a {
         .bg {
@@ -306,15 +286,36 @@
     }
   }
 
+  .bg {
+    display: inline-block;
+
+    source,
+    img {
+      max-width: 80vw;
+      max-height: 30vh;
+    }
+  }
+
+  .bg2 {
+    display: inline-block;
+
+    source,
+    img {
+      max-width: 80vw;
+      max-height: 35vh;
+    }
+  }
+
+
   @media screen and (min-width: 800px) {
-    .Draggable {
       .bg {
         max-width: 40vw;
+        max-height: 35vh;
       }
 
       .bg2 {
         max-width: 40vw;
+        max-height: 35vh;
       }
-    }
   }
 </style>
