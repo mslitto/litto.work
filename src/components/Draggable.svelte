@@ -10,6 +10,7 @@
   export let src: string
   export let href: string = ''
   export let pictureClass: string = ''
+  export let imgClass: string = ''
   export let webp: boolean = true
 
   let draggableRef: HTMLElement
@@ -247,7 +248,7 @@
         <source srcset={src.replace(/\.(jpg|png|gif)$/, '.webp')} />
       {/if}
 
-      <img bind:this={pictureRef} on:load={onLoad} {src} alt="" role="presentation" />
+      <img class="{imgClass}" bind:this={pictureRef} on:load={onLoad} {src} alt="" role="presentation" />
     </picture>
   {/if}
 </div>
