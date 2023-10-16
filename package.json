@@ -13,6 +13,7 @@
   "devDependencies": {
     "@astrojs/svelte": "4.0.3",
     "@magic/format": "0.0.58",
+    "@magic/log": "0.1.18",
     "astro": "3.3.0",
     "autoprefixer": "10.4.16",
     "cssnano": "6.0.1",
