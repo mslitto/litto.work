@@ -242,9 +242,7 @@
     font-size: 20px;
     opacity: 0;
     height: 100%;
-    height: 100vh;
     width: 100%;
-    width: 100vw;
     left: 0;
     top: 0;
     /*transition left 300ms, top 300ms, opacity 500ms*/
