@@ -308,14 +308,20 @@
 
 
   @media screen and (min-width: 800px) {
-      .bg {
+    .bg {
+      source,
+      img {
         max-width: 40vw;
         max-height: 35vh;
       }
+    }
 
-      .bg2 {
+    .bg2 {
+        source,
+        img {
         max-width: 40vw;
         max-height: 35vh;
       }
+    }
   }
 </style>
