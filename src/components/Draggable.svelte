@@ -110,9 +110,9 @@
     style.opacity = '0.8'
 
     // document.addEventListener('mousemove', onMousemove)
-    on(document, 'mousemove', onMousemove)
-    on(document, 'mouseup', onDrop)
-    on(document, 'mouseout', onDropIfOutOfBounds)
+    on(document, 'mousemove', onMousemove as (e : Event) => boolean | undefined, { passive: true })
+    on(document, 'mouseup', onDrop,{ passive: true })
+    on(document, 'mouseout', onDropIfOutOfBounds as (e : Event) => boolean | undefined,{ passive: true })
   }
 
   export const onDrop = (): boolean | void => {
@@ -126,9 +126,9 @@
     style.transition = null
     style.opacity = '1'
 
-    off(document, 'mousemove', onMousemove)
-    off(document, 'mouseup', onDrop)
-    off(document, 'mouseout', onDropIfOutOfBounds)
+    off(document, 'mousemove', onMousemove as (e : Event) => boolean | undefined,{ passive: true })
+    off(document, 'mouseup', onDrop,{ passive: true })
+    off(document, 'mouseout', onDropIfOutOfBounds as (e : Event) => boolean | undefined,{ passive: true })
   }
 
   const onDropIfOutOfBounds = (e: MouseEvent): boolean | void => {
@@ -230,13 +230,6 @@
   style:transition={style.transition}
   style:opacity={style.opacity}
   bind:this={draggableRef}
-  on:drop={onDrop}
-  on:dragstart|preventDefault
-  on:mousedown={onDrag}
-  on:touchstart|preventDefault|stopPropagation={touchHandler}
-  on:touchmove|preventDefault|stopPropagation={touchHandler}
-  on:touchend|preventDefault|stopPropagation={touchHandler}
-  on:touchcancel|preventDefault|stopPropagation={touchHandler}
 >
   {#if href && $lastID === src}
     <DraggableLink {href} {external} />
@@ -248,7 +241,21 @@
         <source srcset={src.replace(/\.(jpg|png|gif)$/, '.webp')} />
       {/if}
 
-      <img class="{imgClass}" bind:this={pictureRef} on:load={onLoad} {src} alt="" role="presentation" />
+      <img
+        class={imgClass}
+        bind:this={pictureRef}
+        on:load={onLoad}
+        on:drop={onDrop}
+        on:dragstart|preventDefault
+        on:mousedown={onDrag}
+        on:touchstart|preventDefault|stopPropagation={touchHandler}
+        on:touchmove|preventDefault|stopPropagation={touchHandler}
+        on:touchend|preventDefault|stopPropagation={touchHandler}
+        on:touchcancel|preventDefault|stopPropagation={touchHandler}
+        {src}
+        alt=""
+        role="presentation"
+      />
     </picture>
   {/if}
 </div>
@@ -291,7 +298,7 @@
 
     source,
     img {
-      max-width: 80vw;
+      max-width: 60vw;
       max-height: 30vh;
     }
   }
@@ -301,11 +308,10 @@
 
     source,
     img {
-      max-width: 80vw;
-      max-height: 35vh;
+      max-width: 50vw;
+      max-height: 40vh;
     }
   }
-
 
   @media screen and (min-width: 800px) {
     .bg {
@@ -317,8 +323,8 @@
     }
 
     .bg2 {
-        source,
-        img {
+      source,
+      img {
         max-width: 40vw;
         max-height: 35vh;
       }
