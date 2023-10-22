@@ -110,9 +110,11 @@
     style.opacity = '0.8'
 
     // document.addEventListener('mousemove', onMousemove)
-    on(document, 'mousemove', onMousemove as (e : Event) => boolean | undefined, { passive: true })
-    on(document, 'mouseup', onDrop,{ passive: true })
-    on(document, 'mouseout', onDropIfOutOfBounds as (e : Event) => boolean | undefined,{ passive: true })
+    on(document, 'mousemove', onMousemove as (e: Event) => boolean | undefined, { passive: true })
+    on(document, 'mouseup', onDrop, { passive: true })
+    on(document, 'mouseout', onDropIfOutOfBounds as (e: Event) => boolean | undefined, {
+      passive: true,
+    })
   }
 
   export const onDrop = (): boolean | void => {
@@ -126,9 +128,11 @@
     style.transition = null
     style.opacity = '1'
 
-    off(document, 'mousemove', onMousemove as (e : Event) => boolean | undefined,{ passive: true })
-    off(document, 'mouseup', onDrop,{ passive: true })
-    off(document, 'mouseout', onDropIfOutOfBounds as (e : Event) => boolean | undefined,{ passive: true })
+    off(document, 'mousemove', onMousemove as (e: Event) => boolean | undefined, { passive: true })
+    off(document, 'mouseup', onDrop, { passive: true })
+    off(document, 'mouseout', onDropIfOutOfBounds as (e: Event) => boolean | undefined, {
+      passive: true,
+    })
   }
 
   const onDropIfOutOfBounds = (e: MouseEvent): boolean | void => {

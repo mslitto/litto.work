@@ -1,9 +1,9 @@
 export type Ele = HTMLElement | Document | Window
 export type Cb = (evt: Event) => boolean | void
 export type EventOptions = {
-  passive?: boolean;
-  once?: boolean;
-  capture?: boolean;
+  passive?: boolean
+  once?: boolean
+  capture?: boolean
 }
 
 export const on = (
