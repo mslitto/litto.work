@@ -26,7 +26,7 @@
 </a>
 
 <style lang="scss">
-  * {
+  a {
     position: fixed;
     left: auto;
     right: 0;
