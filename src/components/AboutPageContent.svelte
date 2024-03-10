@@ -29,23 +29,45 @@
       </div>
 
       <h4 class="header">
-        Rules are undefined, rites are reversed and perception is twisted, places participate as
-        players, identities become blurred and time glitches away.
+      Litto / Daniela Weiss <br>(*1984)<br>
       </h4>
+      
+      <h5 class="clearboth">
+        <br>Bio
+      </h5>
 
-      <p class="clearboth">
-        Litto / Daniela Weiss is a media artist who examines the worlds of analogue and digital art
-        in form of VR and AR installations. Having a background in visual arts and applied Business
-        Administration, she also began her studies in digital art in 2017 and Experimental Game
-        Cultures in 2021 (Vienna University of Applied Arts), expanding her artistic research from
-        interaction design and UX Design to the field of mixed reality. In 2020, she co-founded the
-        web-based AR platform
-        <Link dark={true} underline={true} href="https://artificialmuseum.com">the Artificial Museum</Link>
-        and build interactive AR sculptures in public space. The mirror is a continuous symbol in her
-        work.
+      <p class="clearboth"> 
+        Litto works on system-, net- and media art.
+        Her artistic research focuses on the perception of self through and by others.
+        Most of her work happens in public space, where she creates participative 
+        augmented reality installations and performances. Sometimes she builds her own immersive devices
+        
+        In 2020 she co-founded “SystemKollektiv”, an artist run ngo that created, 
+        develops and curates the “<Link dark={true} underline={true} href="https://artificialmuseum.com">Artificial Museum</Link>”.
+        Her background in business administration helped her turn what started as an artistic 
+        idea into a worldwide platform for digital augmented reality art in public space.
+        She has, both as artist and curator, collaborated with museums, 
+        institutions, collectives and artists from all over the world.<br>
       </p>
 
-      <div class="cv">
+      <h5>
+        Statement
+        </h5>
+  
+        <p> 
+          My artistic research focuses on the perception of self through and by others.
+          My mediums are the internet, augmented reality, and public spaces, which, 
+          through customized interfaces, transform and merge into places of encounter, 
+          fostering direct, informal, and often unexpected interactions between art and observer.
+          I use the mirror as an interface, a device. It has a spirit and it interests me 
+          how mirrors change our perception of space. I use it to reflect on our networked culture 
+          and society. Behind the mirror, the performer enjoys a sphere of private space, a time where 
+          they are not an object, not an image.
+
+        </p>
+
+
+      <div>
         <h5>Individual participation in Exhibitions/Festivals/Conferences (selected)</h5>
 
         <ul>
@@ -272,6 +294,7 @@
 
   li {
     margin: 0 0 0.6em;
+    line-height: 1.3;
   }
 
   .header {
