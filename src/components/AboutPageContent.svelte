@@ -29,40 +29,38 @@
       </div>
 
       <h4 class="header">
-      Litto / Daniela Weiss <br>(*1984)<br>
+        Litto / Daniela Weiss <br />(*1984)<br />
       </h4>
 
       <h5 class="clearboth">
-        <br>Bio
+        <br />Bio
       </h5>
 
       <p>
-        Litto works on system-, net- and media art.
-        Her artistic research focuses on the perception of self through and by others.
-        Most of her work happens in public space, where she creates participative
-        augmented reality installations and performances. Sometimes she builds her own immersive devices
-
-        In 2020 she co-founded “SystemKollektiv”, an artist run ngo that created,
-        develops and curates the “<Link dark={true} underline={true} href="https://artificialmuseum.com">Artificial Museum</Link>”.
-        Her background in business administration helped her turn what started as an artistic
-        idea into a worldwide platform for digital augmented reality art in public space.
-        She has, both as artist and curator, collaborated with museums,
-        institutions, collectives and artists from all over the world.<br>
+        Litto works on system-, net- and media art. Her artistic research focuses on the perception
+        of self through and by others. Most of her work happens in public space, where she creates
+        participative augmented reality installations and performances. Sometimes she builds her own
+        immersive devices In 2020 she co-founded “SystemKollektiv”, an artist run ngo that created,
+        develops and curates the “<Link
+          dark={true}
+          underline={true}
+          href="https://artificialmuseum.com">Artificial Museum</Link
+        >”. Her background in business administration helped her turn what started as an artistic
+        idea into a worldwide platform for digital augmented reality art in public space. She has,
+        both as artist and curator, collaborated with museums, institutions, collectives and artists
+        from all over the world.<br />
       </p>
 
-      <h5>
-        Statement
-      </h5>
+      <h5>Statement</h5>
 
       <p>
-        My artistic research focuses on the perception of self through and by others.
-        My mediums are the internet, augmented reality, and public spaces, which,
-        through customized interfaces, transform and merge into places of encounter,
-        fostering direct, informal, and often unexpected interactions between art and observer.
-        I use the mirror as an interface, a device. It has a spirit and it interests me
-        how mirrors change our perception of space. I use it to reflect on our networked culture
-        and society. Behind the mirror, the performer enjoys a sphere of private space, a time where
-        they are not an object, not an image.
+        My artistic research focuses on the perception of self through and by others. My mediums are
+        the internet, augmented reality, and public spaces, which, through customized interfaces,
+        transform and merge into places of encounter, fostering direct, informal, and often
+        unexpected interactions between art and observer. I use the mirror as an interface, a
+        device. It has a spirit and it interests me how mirrors change our perception of space. I
+        use it to reflect on our networked culture and society. Behind the mirror, the performer
+        enjoys a sphere of private space, a time where they are not an object, not an image.
       </p>
 
       <div>
