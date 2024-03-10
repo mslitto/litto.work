@@ -36,7 +36,7 @@
         <br>Bio
       </h5>
 
-      <p class="clearboth">
+      <p>
         Litto works on system-, net- and media art.
         Her artistic research focuses on the perception of self through and by others.
         Most of her work happens in public space, where she creates participative
@@ -64,7 +64,6 @@
         and society. Behind the mirror, the performer enjoys a sphere of private space, a time where
         they are not an object, not an image.
       </p>
-
 
       <div>
         <h5>Individual participation in Exhibitions/Festivals/Conferences (selected)</h5>
