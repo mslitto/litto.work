@@ -5,19 +5,7 @@ import Draggable from '@components/Draggable.svelte'
 ---
 
 <Layout>
-  <Draggable
-    client:load
-    pictureClass="bg"
-    href="/selected/type/iii/"
-    src="/img/frontpage/type.jpg"
-  />
 
-  <Draggable
-    client:load
-    pictureClass="bg bg2"
-    href="/selected/catfeed/"
-    src="/img/frontpage/catfeed.jpg"
-  />
 
   <Draggable
     client:load
@@ -25,10 +13,24 @@ import Draggable from '@components/Draggable.svelte'
     href="/selected/vorspiel/"
     src="/img/frontpage/vorspiel.jpg"
   />
+  <!-- <Draggable
+    client:load
+    pictureClass="bg bg2"
+    href="/selected/catfeed/"
+    src="/img/frontpage/catfeed.jpg"
+  /> -->
+
 
   <Draggable
     client:load
     pictureClass="bg bg2"
+    href="/selected/hrlitto/"
+    src="/img/frontpage/hrlitto_performance.jpg"
+  />
+  
+  <Draggable
+    client:load
+    pictureClass="bg"
     href="/selected/kostprobe/"
     src="/img/frontpage/kostprobe.jpg"
   />
@@ -37,32 +39,35 @@ import Draggable from '@components/Draggable.svelte'
     client:load
     pictureClass="bg"
     href="/selected/realmirror/"
-    src="/img/frontpage/realmirror_img.jpg"
+    src="/img/frontpage/realmirror.jpg"
   />
 
-  <Draggable
-    client:load
-    pictureClass="bg"
-    href="/selected/hrlitto/"
-    src="/img/frontpage/hrlitto_performance.jpg"
-  />
 
-  <Draggable
+  <!-- <Draggable
     client:load
     pictureClass="bg bg2"
     external={true}
     webp={false}
     href="https://artificialmuseum.com/"
     src="/img/frontpage/artificialmuseum.png"
-  />
+  /> -->
 
-  <!-- <Draggable
+  <Draggable
+  client:load
+  pictureClass="bg"
+  external={true}
+  webp={false}
+  href="/selected/rs/"
+  src="/img/frontpage/rs_lindabrunn.jpg"
+/>
+
+  <Draggable
     client:load
     pictureClass="bg bg2"
     external={true}
-    href="https://artificialmuseum.com/dresden/#z=17&lat=51.11368&lng=13.7525&d=gameover&p=gameover"
-    src="/img/frontpage/bunker_lidar.jpg"
-  /> -->
+    href="https://artificialmuseum.com/eu/de/dresden/hellerau/mirroredfuture/#18/51.1125/13.75282"
+    src="/img/frontpage/mirrorfuture.jpg"
+  />
 
   <!-- <Draggable
     client:load
@@ -78,14 +83,6 @@ import Draggable from '@components/Draggable.svelte'
     href="https://artificialmuseum.com/insideout/"
     src="/img/frontpage/insideout.jpg"
   /> -->
-
-  <Draggable
-    client:load
-    pictureClass="bg"
-    external={true}
-    href="https://artificialmuseum.com/eu/at/vienna/psk/liquidlitto/#18/48.2097/16.3801"
-    src="/img/frontpage/hrlitto2022.jpg"
-  />
 
   <!-- <Draggable
     client:load
@@ -105,9 +102,33 @@ import Draggable from '@components/Draggable.svelte'
 
   <Draggable
     client:load
-    pictureClass="bg"
+    pictureClass="bg bg2"
     external={true}
     href="https://rs.litto.work/"
-    src="/img/frontpage/rs_lindabrunn.jpg"
+    src="/img/frontpage/mirroredspaces.jpg"
   />
+
+  <Draggable
+  client:load
+  pictureClass="bg bg2"
+  external={true}
+  href="/selected/gameover/"
+  src="/img/frontpage/gameover.jpg"
+/>
+
+  <Draggable
+    client:load
+    pictureClass="bg bg2"
+    external={true}
+    href="https://artificialmuseum.com/eu/at/vienna/psk/liquidlitto/#18/48.2097/16.3801"
+    src="/img/frontpage/hrlitto2022.jpg"
+  />
+
+  <Draggable
+  client:load
+  pictureClass="bg"
+  href="/selected/aaron/"
+  src="/img/frontpage/aaron.jpg"
+/>
+
 </Layout>

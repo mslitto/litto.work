@@ -1,0 +1,76 @@
+---
+import Layout from '@layouts/Single.astro'
+import { Link, PageHeader, Picture, YoutubeWrapper } from '@components'
+---
+
+<Layout>
+  <PageHeader>Reterritorialized Spaces</PageHeader>
+
+  <div class="left">
+    <Picture src="rs_06.jpg" height="1180" width="1920"/>
+    
+    <Picture src="rs_01.jpg" height="1600" width="1200" credits="live performance at Medienwerkstatt"/>
+    <YoutubeWrapper id="Jx4g518isDU" width="560" height="315" title="RS Lindabrunn" />
+    <Picture src="rs_04.jpg" height="1200" width="1600" credits="light by Victoria Coeln, photo by Noid"/>
+
+    <YoutubeWrapper id="ron31xBkjBY" width="560" height="315" title="RS Justizpalast" />
+    <Picture src="rs_07.jpg" height="1080" width="1920" credits="photo by Helmut Prochart"/>
+
+
+    <Picture src="rs_02.jpg" height="1200" width="1600" credits="live performance at Echolot"/>
+    <Picture src="rs_03.jpg" height="768" width="1024" credits="Sandkasten Syndikat, 1070 Wien"/>
+
+
+ 
+  </div>
+
+  <div class="right">
+    <h3>Live Performance in urban space</h3>
+
+    <div class="content">
+      <p>
+        <span class="bold uppercase">Reterritorialized Spaces</span>
+        emerge from a distinct recording process capturing performances within public spaces. These spaces are subsequently 
+        "archived" as virtual augmented reality sculptures in public space.<br><br/>
+        The primary focus is on the transformation of repurposed locations in public space, which 
+        have been either temporarily or permanently inhabited by autonomously organized communities 
+        seeking to repurpose them. This evolution involves reshaping the purpose of these spaces.<br><br/>
+        In a specially devised recording method, the performer's surroundings are captured utilizing 
+        a head-worn mirror and a LIDAR scanner. The performer is visually impaired during this recording process. 
+        As the recording individual moves, three-dimensional deformations of the environment materialize around them.
+        The resultant visual content is then translated into the virtual realm. 
+        Exhibition attendees can explore and walk through the augmented reality sculpture using a tablet or smartphone. 
+        <br><br/>
+        These AR works are accessible on the rs.litto.work website, where they are archived and accessible for exploration.
+        <br><br/>
+        Sound: Manuel Cyrill Bachinger<br>Light: Victoria Coeln</br>
+        
+
+      </p>
+      <p class="ellipsis">...</p>
+    </div>
+
+    <div class="link">
+
+      <p>
+        <Link href="https://rs.litto.work" nofollow={true} noreferrer={true}><Picture src="rs_08.jpg" height="1200" width="1600" credits="Archive of collected spaces"/></Links>
+      </p>
+      <p>
+        <Link href="https://www.medienwerkstatt-wien.at/aktuell/reterritorial.php" nofollow={true} noreferrer={true}>Exhibition: Medienwerkstatt Vienna </Link>
+      </p>
+
+      <p>
+        <Link href="https://esel.at/termin/119359/reterritorialized-spaces-symposion-i-23" nofollow={true} noreferrer={true}>
+          Exhibition Lindabrunn Symposion
+        </Link>
+      </p>
+
+      <p>
+        <Link href="https://parallelvienna.com/product/litto-daniela-weiss-ar-vr-installation/" nofollow={true} noreferrer={true}>
+          Exhibition Parallel Vienna / Gallery ARTECONT
+        </Link>
+      </p>
+
+    </div>
+  </div>
+</Layout>

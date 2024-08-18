@@ -1,11 +1,11 @@
 ---
 import Layout from '@layouts/Single.astro'
 
-import { Link, Picture, YoutubeWrapper } from '@components'
+import { Link, PageHeader, Picture, YoutubeWrapper } from '@components'
 ---
 
 <Layout>
-  <h2>Real Mirror</h2>
+  <PageHeader>Real Mirror</PageHeader>
   <div class="left">
     <Picture src="litto_realmirror_catalogue.jpg" height="800" width="1200" />
 
@@ -13,8 +13,13 @@ import { Link, Picture, YoutubeWrapper } from '@components'
 
     <p class="credits">photo: Verena Tscherner</p>
     <p></p>
-
     <YoutubeWrapper title="Real Mirror Teaser" width="1280" height="720" id="BvJCcBT4i0M" />
+
+    <Picture src="litto_realmirror_expo_1.jpg" height="800" width="1200" />
+    <Picture src="litto_realmirror_expo_2.jpg" height="675" width="1200" />
+    <Picture src="litto_realmirror_expo_3.jpg" height="800" width="1200" />
+    <Picture src="litto_realmirror_expo_4.jpg" height="900" width="1200" />
+
 
     <p class="credits">music: Patrick K.-H.</p>
     <p></p>
@@ -40,26 +45,22 @@ import { Link, Picture, YoutubeWrapper } from '@components'
 
       <p class="ellipsis">...</p>
 
-      <Picture src="litto_realmirror_expo_1.jpg" height="800" width="1200" />
-      <Picture src="litto_realmirror_expo_2.jpg" height="675" width="1200" />
-      <Picture src="litto_realmirror_expo_3.jpg" height="800" width="1200" />
-      <Picture src="litto_realmirror_expo_4.jpg" height="900" width="1200" />
     </div>
 
     <div class="link">
       <p>
-        <Link href="https://digitalekunst.ac.at/fuckreality/">
+        <Link href="https://digitalekunst.ac.at/">
           Cooperation: Digital Class // University of Applied Arts Vienna
         </Link>
         <br />
-        <Link href="https://www.kunstraum.net/en/Exhibitions">@ Kunstraum Niederösterreich</Link>
+        <Link href="https://www.kunstraum.net/en">@ Kunstraum Niederösterreich</Link>
         <br />
-        <Link href="http://www.medienwerkstatt-wien.at/aktuell/medienkunst10.php">
+        <Link href="https://www.medienwerkstatt-wien.at/aktuell/medienkunst10.php">
           @ Medienwerkstatt
         </Link>
         <br />
         <Link
-          href="hhttp://www.animafest.hr/en/2019/side_event/read/fuckreality_positions_on_immersive_art_the_world_festival_of_animated_film_animafest_zagreb_2019_department_of_digital_arts_university_of_applied_arts_vienna"
+          href="https://www.animafest.hr"
           nofollow={true}
           noreferrer={true}
         >

@@ -1,0 +1,52 @@
+---
+import Layout from '@layouts/Single.astro'
+import { Link, PageHeader, Picture } from '@components'
+---
+
+<Layout>
+  <PageHeader>Gameover or Replay</PageHeader>
+
+  <div class="left">
+
+    <Picture src="gameover_01.jpg" height="1600" width="1200" credits="Interactive installation"/>
+    <Picture src="gameover_03.jpg" height="1600" width="1200" credits="AR Experience @ArtificialMuseum"/>
+    <Picture src="gameover_05.jpg" height="1600" width="830" />
+    <Picture src="gameover_04.jpg" height="1600" width="817" />
+    <Picture src="gameover_02.jpg" height="1200" width="1600" />
+
+ 
+  </div>
+
+  <div class="right">
+    <h3>Digital Voting System</h3>
+
+    <div class="content">
+      <p>
+        Creative eyes can already catch a glimpse of the needed changes, a vision for 
+        humanity’s future that is reachable, sustainable and, frankly, better than what we have now. 
+        Those same eyes also see the alternative future of climate disasters, social disarray and division, 
+        markets completely detached from reality and humanity enslaved by the machine.
+        There are only two possible endings to this scenario: Game Over or Replay.
+        A virtual voting system, driven by an AI to lead you through the process.
+        Created at Experimental Game Cultures / Univeristy of Applied Arts.
+
+      </p>
+      <p class="ellipsis">...</p>
+    </div>
+
+    <div class="link">
+      <p>
+        <Link href="https://artificialmuseum.com/moon/marecrisium/gameoverorreplay/#4.5/11/56">AR Object at Artificial Museum</Link>
+      </p>
+      <p>
+        <Link href="https://experimentalgamecultures.uni-ak.ac.at/parallel-vienna-hybrid-ludic-assemblages/">Exhibition @Parallel Vienna 2022</Link>
+      </p>
+
+      <p>
+        <Link href="https://2023.amaze-berlin.de/schedule/" nofollow={true} noreferrer={true}>
+          Exhibition @AMAZE Festival 2023
+        </Link>
+      </p>
+    </div>
+  </div>
+</Layout>

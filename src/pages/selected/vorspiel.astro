@@ -1,10 +1,10 @@
 ---
 import Layout from '@layouts/Single.astro'
-import { Link, Picture, YoutubeWrapper } from '@components'
+import { Link, PageHeader, Picture, YoutubeWrapper } from '@components'
 ---
 
 <Layout>
-  <h2>Das Vorspiel</h2>
+  <PageHeader>Das Vorspiel</PageHeader>
 
   <div class="left">
     <YoutubeWrapper id="YTYhBzs00TQ" width="560" height="315" title="Vorspiel Teaser" />
@@ -36,6 +36,15 @@ import { Link, Picture, YoutubeWrapper } from '@components'
         <Link href="https://setzkastenwien.at/">Music: Noa</Link>
       </p>
 
+      <p>
+        <Link
+          href="https://www.monochrom.at/arse-elektronika/"
+          nofollow={true}
+          noreferrer={true}
+        >
+         Exhibition @ ArseElectronica 2023
+        </Link>
+      </p>
       <p>
         <Link href="https://schwelle.at/" nofollow={true} noreferrer={true}>
           Performance @ Schwelle Wien

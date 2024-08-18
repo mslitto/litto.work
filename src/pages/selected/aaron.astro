@@ -1,0 +1,48 @@
+---
+import Layout from '@layouts/Single.astro'
+import { Link, PageHeader, Picture } from '@components'
+---
+
+<Layout>
+  <PageHeader>Aaron Swartz</PageHeader>
+
+  <div class="left">
+
+    <Picture src="aaron_01.jpg" height="1130" width="1512" credits="&copy; SystemKollektiv"/>
+    <Picture src="aaron_02.jpg" height="1130" width="1405" credits="&copy; SystemKollektiv"/>
+ 
+  </div>
+
+  <div class="right">
+    <h3>AI generated avatar</h3>
+
+    <div class="content">
+      <p>
+        <span class="bold uppercase">Guerilla Open Access Manifesto</span>
+        depicts the metamorphosis of an analog work of art into a digital one, 
+        and the transformation of the persona of Aaron Swartz and his astounding 
+        works using AI tools. Litto transformed his photo into a living person 
+        through AI face reconstruction and Hidéo Snes gave Aaron his natural 
+        voice through AI speech synthesis. All in all it is as if he would talk with us 
+        directly through an alternate reality. The Guerilla Open Access Manifesto is a 
+        permanent virtual monument at the Artificial Museum.
+      </p>
+      <p class="ellipsis">...</p>
+    </div>
+
+    <div class="link">
+      <p>
+        <Link href="https://artificialmuseum.com/eu/at/linz/arselectronicacenter/guerillaopenaccessmanifesto/#18/48.3097/14.2843">AR Object at Artificial Museum</Link>
+      </p>
+      <p>
+        <Link href="https://schuberttheater.at/aaron-swartz-2/">Cooperation: Schuberttheater</Link>
+      </p>
+
+      <p>
+        <Link href="https://ars.electronica.art/who-owns-the-truth/en/insight-aaron/" nofollow={true} noreferrer={true}>
+          Exhibition @ArsElectronica 2023
+        </Link>
+      </p>
+    </div>
+  </div>
+</Layout>
