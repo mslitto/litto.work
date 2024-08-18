@@ -1,0 +1,33 @@
+{
+	"/": [
+		"src/routes/+layout.ts",
+		"src/routes/+layout.ts"
+	],
+	"/selected": [
+		"src/routes/+layout.ts"
+	],
+	"/selected/catfeed": [
+		"src/routes/+layout.ts"
+	],
+	"/selected/hrlitto": [
+		"src/routes/+layout.ts"
+	],
+	"/selected/kostprobe": [
+		"src/routes/+layout.ts"
+	],
+	"/selected/mirroredspaces": [
+		"src/routes/+layout.ts"
+	],
+	"/selected/newreality": [
+		"src/routes/+layout.ts"
+	],
+	"/selected/realmirror": [
+		"src/routes/+layout.ts"
+	],
+	"/selected/type/iii": [
+		"src/routes/+layout.ts"
+	],
+	"/selected/vorspiel": [
+		"src/routes/+layout.ts"
+	]
+}
