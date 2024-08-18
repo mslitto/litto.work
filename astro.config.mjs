@@ -10,7 +10,6 @@ export default defineConfig({
   outDir: './docs',
   output: 'static',
   trailingSlash: 'always',
-  jsx: true,
 
   server: {
     port: 8000,
