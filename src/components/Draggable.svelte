@@ -329,7 +329,7 @@
     .bg2 {
       source,
       img {
-        max-width: 40vw;
+        max-width: 20vw;
         max-height: 35vh;
       }
     }

@@ -14,7 +14,7 @@
       <div>
         <Picture
           imgClass="about-page-img"
-          src="/img/me3.jpg"
+          src="/img/me4.jpg"
           height="800"
           width="800"
           alt=""
@@ -29,7 +29,7 @@
       </div>
 
       <h4 class="header">
-        Litto / Daniela Weiss <br />(*1984)<br />
+        Litto / Daniela Weiss
       </h4>
 
       <h5 class="clearboth">
@@ -37,8 +37,7 @@
       </h5>
 
       <p>
-        Litto works on system-, net- and media art. Her artistic research focuses on the perception
-        of self through and by others. Most of her work happens in public space, where she creates
+        Litto works on system-, net- and media art. Most of her work happens in public space, where she creates
         participative augmented reality installations and performances. Sometimes she builds her own
         immersive devices In 2020 she co-founded “SystemKollektiv”, an artist run ngo that created,
         develops and curates the “<Link
@@ -188,6 +187,8 @@
 
         <h5>Experience</h5>
         <ul>
+          <li>2020 – now Artificial Museum artistic direction artistic research and development</li>
+          <li>2021 – now SystemKollektiv artistic research, teaching, curation</li>
           <li>
             2017 - 2023 artistic practice in Augmented Reality and Virtual Reality, Javascript,
             Three.js, Blender 3D, Touch Designer, Unreal Engine
@@ -203,15 +204,14 @@
 
         <h5>Education</h5>
         <ul>
-          <li>2020 – now Artificial Museum artistic direction artistic research and development</li>
-          <li>2021 – now SystemKollektiv workshop, teaching, curation, organisation</li>
+
+          <li>2016 – 2023 Graduation: Digital Art, University of Applied Arts, Vienna, Austria</li>
           <li>
             2021 – 2022 Experimental Game Cultures, University of Applied Arts, Vienna, Austria
           </li>
-          <li>2016 – 2022 Digital Art, University of Applied Arts, Vienna, Austria</li>
-          <li>2012 Graduation Communication Design, Die Graphische, Vienna, Austria</li>
+          <li>2012 Graduation: Communication Design, Die Graphische, Vienna, Austria</li>
           <li>
-            2009 Graduation Business Administration at Business University (Mag), Vienna, Austria
+            2009 Graduation: Business Administration at Business University (Mag), Vienna, Austria
           </li>
         </ul>
       </div>
@@ -285,6 +285,7 @@
 
     .content {
       background: linear-gradient(rgba(255, 189, 235, 0.9) 0%, rgba(250, 0, 110, 0.9) 100%);
+      padding: 1rem 5% 200px;
     }
   }
 

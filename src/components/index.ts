@@ -1,4 +1,5 @@
 export { default as Link } from './Link.svelte'
+export { default as PageHeader } from './PageHeader.astro'
 export { default as Picture } from './Picture.svelte'
 export { default as YoutubeWrapper } from './YoutubeWrapper.astro'
 export { default as DraggableLink } from './DraggableLink.svelte'

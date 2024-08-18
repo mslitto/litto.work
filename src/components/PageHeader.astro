@@ -1,0 +1,29 @@
+<header>
+  <h2><slot /></h2>
+</header>
+
+<style lang="scss">
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fafafa;
+    z-index: 1;
+  }
+
+
+  h2 {
+    padding: 10px var(--padding-side);
+    margin: 0;
+    max-width: 1200px;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 800px) {
+    h2 {
+      margin: 0 auto;
+    }
+  }
+
+</style>

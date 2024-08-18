@@ -14,7 +14,8 @@
     width: 45px;
     right: 0;
     top: 0;
-    position: absolute;
+    position: fixed;
+    z-index: 2;
   }
 
   .triangle {
