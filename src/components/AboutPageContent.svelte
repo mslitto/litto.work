@@ -41,8 +41,6 @@
         participative augmented reality installations and performances. Sometimes she builds her own
         immersive devices In 2020 she co-founded “SystemKollektiv”, an artist run ngo that created,
         develops and curates the “<Link
-          dark={true}
-          underline={true}
           href="https://artificialmuseum.com">Artificial Museum</Link
         >”. Her background in business administration helped her turn what started as an artistic
         idea into a worldwide platform for digital augmented reality art in public space. She has,
