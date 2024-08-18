@@ -67,7 +67,7 @@
 
         <ul>
           <li>
-            2024 »Collective Scream« <b>Diploma at Digital Art/ University of Applied Arts</b> Vienna, Austria
+            2024 »SystemKollektiv Manifest« <b>Diploma at Digital Art/ University of Applied Arts</b> Vienna, Austria
           </li>
           <li>
             2023 »Aaron Swartz« <b>ARS Electronica 2023</b> In cooperation with Schuberttheater and Hidéo
